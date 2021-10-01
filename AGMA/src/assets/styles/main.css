@@ -2113,10 +2113,6 @@ text-decoration: none;
   color: #2E3131;
 }
 
-.login-content {
-  margin-left: -10px;
-}
-
 @media only screen and (max-width: 786px) {
   .login-content {
     margin: 0;
@@ -2197,6 +2193,10 @@ text-decoration: none;
 
 .login-content--form input[type = "checkbox"]:checked {
   background-color: #AB417F;
+}
+
+.login-content--form input[type = "checkbox"]:focus {
+  box-shadow: 0 0;
 }
 
 .login-content--form input[type = "checkbox"] + label {
