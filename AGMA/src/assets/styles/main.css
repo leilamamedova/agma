@@ -187,7 +187,7 @@ a {
   padding-bottom: 80px;
 }
 
-/* Text Decorations */
+/* Decorations */
 .posts-bold-title h1 {
   height: 48px; 
   font-family: "SF Pro Display Bold";
@@ -195,6 +195,24 @@ a {
   line-height: 48px;
   text-align: justify;  
   color: #2E3131; 
+}
+
+.btn__rounded_pink {
+  align-items: center;
+  padding: 12px 32px;
+  width: 176px;
+  height: 48px;  
+  background: #AB417F;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 52px;
+}
+
+.btn__rounded_pink:hover {
+  color: #fff;
 }
 
 /* Header */
@@ -2878,10 +2896,6 @@ form select:focus {
 }
 
 /* Date */
-.d-flex > .btn {
-  flex: 1;
-}
-
 .carbonads {
   border: 1px solid #ccc;
   border-radius: 0.25rem;
@@ -3883,7 +3897,7 @@ form select option {
 }
 
 /* Photo Galery */
-.gallery-title {
+.gallery-title h1 {
   font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 600;
@@ -4128,4 +4142,26 @@ form select option {
 
 .owl-carousel .owl-item img {
   width: 740px;
+}
+
+/* Photo Gallery Single Page */
+.photo-galery-text p {
+  margin-bottom: 28px;
+  font-family: "SF Pro Display Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;  
+  text-align: justify;  
+  color: #2E3131;  
+}
+
+/* Video Gallery Single Page */
+.videogallery-box-block {
+  margin-bottom: 28px;
+}
+
+/* Projects Page */
+.projects-tabs a {
+  margin: 10px 32px 0 0;
 }
