@@ -195,6 +195,7 @@ a {
   line-height: 48px;
   text-align: justify;  
   color: #2E3131; 
+  margin: 0;
 }
 
 .btn__rounded_pink {
@@ -1232,7 +1233,7 @@ li.has-child > a::after {
 }
 
 .nav-link {
-padding-left: 0;
+padding: 0;
 margin-left: 0;
 }
 
@@ -1245,7 +1246,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 24px;
-margin: 42px 12px 22px 0;
+margin: 42px 32px 32px 0;
 }
 
 .nav-link.active {
@@ -3837,11 +3838,6 @@ form select option {
   padding-bottom: 4px;
 }
 
-.single-info-page-side-badge:hover {
-  background: linear-gradient(0deg, #AB417F, #AB417F);
-  border-radius: 6px;
-}
-
 .single-info-page-side .last-badge {
   border: none;
 }
@@ -3852,7 +3848,6 @@ form select option {
   height: 76px;    
   max-height: 76px;
   border-radius: 4px;
-  padding-left: 10px;
 }
 
 .single-info-page-side-badge-text {
@@ -3879,8 +3874,8 @@ form select option {
    -webkit-line-clamp: 2;
 }
 
-.single-info-page-side-badge-text:hover h6 {
-  color: #fff;
+.single-info-page-side-badge-text h6:hover {
+  color: #AB417F;
 }
 
 .single-info-page-side-badge-text p {
@@ -3890,10 +3885,6 @@ form select option {
   font-size: 14px;
   line-height: 24px;
   color: #586268;
-}
-
-.single-info-page-side-badge-text:hover p {
-  color: #fff;
 }
 
 /* Photo Galery */
