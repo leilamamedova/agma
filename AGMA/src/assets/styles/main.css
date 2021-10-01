@@ -161,6 +161,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    padding: 0;
 }
 
 a {
@@ -3811,15 +3812,15 @@ form select option {
   box-shadow: 40px 20px 100px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   margin-left: 28px;
-  padding-top: 10px;
+  padding-top: 4px;
+  padding-bottom: 6px;
 }
 
 .single-info-page-side-badge {
   border-bottom: 1px solid #E4E8EE;
   width: 316px;
-  margin: 0 10px 0 10px;
   padding-top: 16px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
 .single-info-page-side-badge:hover {
@@ -3827,16 +3828,17 @@ form select option {
   border-radius: 6px;
 }
 
-.single-info-page-side-badge .last-badge {
+.single-info-page-side .last-badge {
   border: none;
 }
 
 .single-info-page-side-badge img {
-  width: 76px;
-  max-width: 76px;
+  width: 86px;
+  max-width: 86px;
   height: 76px;    
   max-height: 76px;
   border-radius: 4px;
+  padding-left: 10px;
 }
 
 .single-info-page-side-badge-text {
@@ -3845,7 +3847,7 @@ form select option {
 }
 
 .single-info-page-side-badge-text h6 {
-  width: 224px;
+  width: 210px;
   height: 40px;  
   font-family: "SF Pro Display Medium";
   font-style: normal;
@@ -4071,4 +4073,59 @@ form select option {
 .card {
   background: transparent;
   border: none;
+}
+
+/* News SinglePage Carousel */
+#news-info-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+#news-info-carousel .nav-button {
+  height: 50px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 170px !important;
+}
+
+#news-info-carousel .owl-prev {
+  left: 25px;
+}
+
+#news-info-carousel .owl-next {
+  right: 25px;
+}
+
+#news-info-carousel .owl-nav [class*=owl-] {
+  width: 35.07px;
+  height: 20.34px;
+  font-family:"SF Pro Display Medium";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 48px;
+  color: #fff;
+}
+
+#news-info-carousel .prev-carousel:hover {
+  background-position: 0px -53px;
+  transition: all .5s ease;
+}
+
+#news-info-carousel .next-carousel:hover {
+  background-position: -24px -53px;
+  transition: all .5s ease;
+}
+
+.news-box-badges img {
+  max-width: 740px;
+  max-height: 372px;
+  width: 740px;
+  height: 372px;
+  border-radius: 4px;
+}
+
+.owl-carousel .owl-item img {
+  width: 740px;
 }

@@ -62,6 +62,14 @@ $('#course-info-badge').owlCarousel({
   }
 });
 
+$('#news-info-carousel').owlCarousel({
+  margin: 30,
+  loop: true,
+  nav: true,
+  dots: false,
+  navText: ["<div class='nav-button owl-prev'><i class='far fa-chevron-left'></i></div>", "<div class='nav-button owl-next'><i class='far fa-chevron-right'></i></div>"],
+  items: 1,
+});
 
 $('#fam-courses-carousel').owlCarousel({
   margin: 28,
