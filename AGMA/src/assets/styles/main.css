@@ -4147,6 +4147,14 @@ form select option {
   color: #2E3131;  
 }
 
+.photo-galery-text h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 24px;
+  line-height: 48px;
+  color: #2E3131;  
+  margin-bottom: 0;
+}
+
 /* Video Gallery Single Page */
 .videogallery-box-block {
   margin-bottom: 28px;
@@ -4200,7 +4208,11 @@ form select option {
   margin-bottom: 0;
 }
 
-.trainings-badge-title p span:first-child, span:last-child {
+.trainings-badge-title p span:first-child {
+  margin-left: 8px;
+}
+
+.trainings-badge-title p span:last-child {
   margin-left: 8px;
 }
 
@@ -4218,4 +4230,111 @@ form select option {
   text-decoration-line: line-through;
   color: #849097;
   margin-left: 12px;
+}
+
+/* Trainings Single Page */
+.page-photo-cover {
+  height: 280px;  
+  background: linear-gradient(0deg, #4D5D72, #4D5D72), url("../img/page-photo-cover.png");
+  background-blend-mode: multiply, normal;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  color: #fff;
+}
+
+.page-photo-cover .breadcrumb {
+  margin-top: 0;
+  margin-bottom: 12px;  
+  position: static;
+}
+
+.page-photo-cover .breadcrumb__link, .page-photo-cover .breadcrumb__link a, .page-photo-cover .breadcrumb__link a::after {
+  color: #fff;
+}
+
+.page-photo-cover .posts-bold-title h1 {
+  color: #fff;
+}
+.icon-and-text p {
+  margin: 12px 0 24px 0;
+}
+
+.icon-and-text i {
+  margin-right: 13px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.icon-and-text span {
+  margin-right: 28px;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.white-square-btn {
+  padding: 12px 20px;
+  width: 139px;
+  height: 48px;  
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 24px;
+
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E3131;
+}
+
+.white-square-btn i {
+  margin-left: 8px;
+}
+
+/* Table Section */
+.table-section {
+  margin-top: 25px;
+}
+
+.table-section .table {
+  width: 836px;
+  height: 338px;
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  --bs-table-striped-bg: #F9FAFB;
+  cursor: url("../img/Mouse.svg"), auto;
+}
+
+.table-section .table td {
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3131;
+  padding-top: 17px;
+  padding-left: 20px;
+}
+
+.table-section .table td i {
+  color: #AB417F;
+  margin-right: 20px;
+}
+
+.table-section .table td span:last-child {
+  margin-right: 16px;
+}
+
+.table-content--side {
+  margin-left: 28px;
+}
+
+.table-side1 {
+  width: 260px;
+  height: 338px;
+  max-width: 260px;
+  max-height: 338px;
+  border-radius: 4px;
 }
