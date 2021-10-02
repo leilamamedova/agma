@@ -4156,3 +4156,66 @@ form select option {
 .projects-tabs a {
   margin: 10px 32px 0 0;
 }
+
+/* Trainings Page */
+.trainings-tabs a {
+  margin: 32px 64px 0 0;
+}
+
+.badges-with-rating {
+  margin: 32px auto auto auto;
+}
+
+.trainings-box-badges img {
+  max-width: 260px;
+  max-height: 120px;
+  width: 260px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.trainings-badge-title h5 {
+  width: 255px;
+  height: 48px;    
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3131;
+  margin-top: 12px;
+}
+
+.trainings-badge-title h6 {
+  height: 16px;    
+  font-family: "SF Pro Display Regular";
+  font-size: 12px;
+  line-height: 16px;
+  color: #849097;
+}
+
+.trainings-badge-title p {
+  font-family: "SF Pro Display Bold";
+  font-size: 14px;
+  line-height: 24px;
+  color: #586268;  
+  margin-bottom: 0;
+}
+
+.trainings-badge-title p span:first-child, span:last-child {
+  margin-left: 8px;
+}
+
+.trainings-badge-title h4 {
+  font-family: "SF Pro Display Medium";
+  font-size: 20px;
+  line-height: 32px;  
+  color: #2E3131;
+}
+
+.trainings-badge-title h4 span {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  color: #849097;
+  margin-left: 12px;
+}
