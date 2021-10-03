@@ -202,13 +202,13 @@ if ($(window).width() > 568) {
     const xP = xPos * 100 / $(window).width()
     yP = yPos * 100 / $(window).height()
     t = $(this);
+    $('html').css({overflowY: 'hidden'})
 
-
-    t.addClass("deactive")
 
     if (t.hasClass("active")) {
       t.removeClass("active");
-
+      $('.menu_before').addClass('d-none')
+      t.addClass("deactive")  
 
       $("body").removeClass("hide_content")
 
@@ -219,11 +219,13 @@ if ($(window).width() > 568) {
           menu.attr("style", "display:block; -webkit-clip-path: circle(0% at " + xP + "% " + yP + "%);  clip-path: circle(0% at " + xP + "% " + yP + "%); ")
           $("body").removeClass("open_menu");
           setTimeout(function () {
+            $('.menu_before').removeClass('d-none')
             $("header").removeClass("animated")
             menu.removeAttr("style").removeClass("animated")
             t.removeClass("deactive")
+            $('html').css({overflowY: 'auto'})
 
-          }, 1000)
+          }, 800)
         }, 100)
       }, 1)
 

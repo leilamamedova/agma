@@ -4235,7 +4235,7 @@ form select option {
 /* Trainings Single Page */
 .page-photo-cover {
   height: 280px;  
-  background: linear-gradient(0deg, #4D5D72, #4D5D72), url("../img/page-photo-cover.png");
+  background: url("../img/page-photo-cover.png");
   background-blend-mode: multiply, normal;
   background-size: cover;
   background-position: center; /* Center the image */
