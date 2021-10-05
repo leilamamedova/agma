@@ -4560,3 +4560,46 @@ form select option {
 #about-us-carousel .owl-dot:focus {
   outline: none;
 }
+
+/* Partners Page */
+.badges-with-partners {
+  margin: 32px auto auto auto;  
+}
+
+.badge-with-partners {
+  margin-bottom: 32px;
+}
+
+.badge-with-partners-image {
+  width: 244px;
+  height: 160px;  
+  background: linear-gradient(162.1deg, rgba(255, 255, 255, 0.7) 4.67%, rgba(255, 255, 255, 0.7) 87.8%);
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.badge-with-partners img {
+  width: 204px;
+  height: 120px;
+  max-width: 204px;
+  max-height: 120px;
+  border-radius: 6px;
+}
+
+.badge-with-partners-title h6 {
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;  
+  color: #2E3131;
+  margin-top: 12px;
+}
+
+.badge-with-partners-title h6:hover {
+  transition: all .5s ease;
+  color: #AB417F;
+}
