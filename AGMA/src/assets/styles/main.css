@@ -186,6 +186,11 @@ a {
   padding-bottom: 80px;
 }
 
+.error404-sections {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 /* Decorations */
 .posts-bold-title h1 {
   height: 48px; 
@@ -4249,9 +4254,8 @@ form select option {
 
 /* Trainings Single Page */
 .page-photo-cover {
-  height: 280px;  
-  background: url("../img/page-photo-cover.png");
-  background-blend-mode: multiply, normal;
+  height: 280px;    
+  background: linear-gradient(0deg, #4D5D72, #4D5D72);
   background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -4292,7 +4296,6 @@ form select option {
 
 .white-square-btn {
   padding: 12px 20px;
-  width: 139px;
   height: 48px;  
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
@@ -4768,4 +4771,37 @@ form select option {
   line-height: 28px;  
   color: #2E3131;
   margin-top: 16px;
+}
+
+/* Error 404 */
+.error404 {
+  text-align: center;
+}
+
+.error404 img {
+  margin-bottom: 52px;
+}
+
+.error404 h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;  
+  color: #2E3131;  
+  margin-bottom: 16px;
+}
+
+.error404 p {
+  width: 756px;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 28px;  
+  text-align: center;  
+  color: #2E3131;
+  margin: auto;
+}
+
+.error404 a {
+  color: #AB417F;
+  text-decoration: underline;
 }
