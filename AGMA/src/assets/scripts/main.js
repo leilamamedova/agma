@@ -71,6 +71,15 @@ $('#news-info-carousel').owlCarousel({
   items: 1,
 });
 
+$('#about-us-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  center:true,
+  autoplay:true,
+  items: 1,
+  dots: true
+  });
+
 $('#fam-courses-carousel').owlCarousel({
   margin: 28,
   autoplay: true,

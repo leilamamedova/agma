@@ -168,7 +168,6 @@ a {
     text-decoration: none;
 }
 
-
 /* Section */
 .info-page-sections {
   padding-top: 52px;
@@ -359,6 +358,7 @@ a {
 
 .header__brand__buttons {
   padding-top: 17px;
+  text-align: center;
 }
 
 .header__brand__buttons p {
@@ -376,6 +376,7 @@ a {
 
 .header__brand__buttons div {
   padding-right: 40px;
+  width: 100%;
 }
 
 .header__brand__profile {
@@ -405,7 +406,6 @@ a {
 .menu_before i {
     width: 33px;
     height: 32px;
-    margin-left: 3px;
 }
 
 /* Menu */
@@ -4131,7 +4131,7 @@ form select option {
   border-radius: 4px;
 }
 
-.owl-carousel .owl-item img {
+.news-box-block .owl-carousel .owl-item img {
   width: 740px;
 }
 
@@ -4337,4 +4337,226 @@ form select option {
   max-width: 260px;
   max-height: 338px;
   border-radius: 4px;
+}
+
+/* Strukcture Page Single */
+.structure-page img {
+  float: left;
+  width: 356px;
+  height: 372px;
+  max-width: 356px;
+  max-height: 372px;
+  border-radius: 6px;
+  margin-right: 28px;
+  margin-bottom: 0px;
+}
+
+/* Strukcture Page */
+.structure-banner {
+  height: 372px;  
+  background: #F3F5F8;
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-bottom: 52px;
+}
+
+.structure-banner-text {
+  margin-left: 96px;
+}
+
+.structure-banner-text h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 32px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;  
+  color: #2E3131;
+  margin-bottom: 0px;
+}
+
+.structure-banner-text h6 {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;  
+  color: #AB417F;  
+  margin-bottom: 20px;
+}
+
+.structure-banner-text p {
+  width: 644px;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;  
+  text-align: justify;  
+  color: #2E3131;  
+}
+
+.structure-banner-image img {
+  width: 356px;
+  height: 372px;
+  max-width: 356px;
+  max-height: 372px;  
+  border-radius: 0px 6px 6px 0px;
+}
+
+.structure-persons h3 {
+  font-family: "SF Pro Display Medium";
+  font-size: 24px;
+  line-height: 48px;
+  align-items: center;
+  color: #2E3131;
+  margin-bottom: 0;
+}
+
+/* Badges with Text*/
+.badges-with-text {
+  margin: 16px auto 52px auto;  
+}
+
+.badge-with-text {
+  margin-right: 28px;
+  margin-bottom: 16px;
+}
+
+.badge-with-text img {
+  max-width: 260px;
+  max-height: 260px;
+  width: 260px;
+  height: 260px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.badge-with-text-title h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 20px;
+  line-height: 32px;
+  align-items: center;  
+  color: #2E3131;  
+  margin-bottom: 0;
+}
+
+.badge-with-text-title h1:hover {
+  transition: all .5s ease;
+  color: #AB417F;
+}
+
+.badge-with-text-title p {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;  
+  color: #586269;  
+  margin-bottom: 0;
+}
+
+.structure-tabs a {
+  margin: 0 34px 0 0;
+  font-family: "SF Pro Display Medium";
+  font-size: 24px;
+  line-height: 48px;
+  align-items: center;  
+  color: #2E3131;  
+}
+
+/* About Us */
+.about-us-section {
+  padding-top: 52px;
+}
+
+.about-banner-white {
+  margin-top: 32px;
+  margin-bottom: 52px;
+}
+
+.about-bannerwh-text p {
+  width: 548px;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3131; 
+  text-align: justify;
+}
+
+.about-bannerwh-image img {
+  width: 548px;
+  height: 300px;
+  max-width: 548px;
+  max-height: 300px;
+  border-radius: 6px;
+}
+
+.about-banner-grey {
+  background: #F3F5F8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-bannergr-text {
+  width: 548px;
+  padding-right: 28px;
+}
+
+.about-bannergr-text h3 {
+  font-family: "SF Pro Display Medium";
+  font-size: 24px;
+  line-height: 32px;
+  text-align: justify;  
+  color: #2E3131;  
+  margin-bottom: 21px;
+}
+
+.about-bannergr-text p {
+  height: 144px;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;  
+  color: #2E3131;
+}
+
+.about-carousel {
+  margin-bottom: 80px;
+}
+
+.about-item {
+  height: 448px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 448px;
+  border-radius: 6px;
+}
+
+#about-us-carousel .owl-dots {
+  position: absolute;
+  bottom: 26px;
+  left: 100px;
+}
+
+#about-us-carousel .owl-dot {
+  width: 8.39px;
+  height: 8px;
+  margin-right: 8px;  
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%
+}
+
+#about-us-carousel .owl-dots .active {
+  width: 12.58px;
+  height: 12px;
+  background: #FFFFFF;
+  transition: all .5s ease;
+}
+
+#about-us-carousel .owl-dot:hover {
+  width: 12.58px;
+  height: 12px;
+  background: #FFFFFF;
+  transition: all .5s ease;
+}
+
+#about-us-carousel .owl-dot:focus {
+  outline: none;
 }
