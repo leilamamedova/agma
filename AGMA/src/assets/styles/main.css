@@ -4807,3 +4807,44 @@ form select option {
   color: #AB417F;
   text-decoration: underline;
 }
+
+/* Search Result Null Page */
+.search-result-null .tabbed_content input[type="radio"]:checked + a label,
+.search-result-null .tabbed_content a.active label {
+  border-bottom: 2px solid #AB417F;
+  color: #AB417F;
+}
+
+.search-result-null .content-container h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 20px;
+  line-height: 32px;  
+  color: #2E3131;  
+}
+
+.search-result-null .content-container h1 span {
+  color: #AB417F;
+}
+
+.search-result-null .content-container p {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #586268;
+}
+
+/* Search Result Page */
+.search-result .tabbed_content .content-container .content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.search-result .tabbed_content input[type="radio"]:checked + a label,
+.search-result .tabbed_content a.active label {
+  border-bottom: 2px solid #AB417F;
+  color: #AB417F;
+}
+
+.search-result .badges-with-calendar {
+  margin-bottom: 0;
+}
