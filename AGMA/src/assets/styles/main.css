@@ -197,9 +197,17 @@ a {
   font-family: "SF Pro Display Bold";
   font-size: 32px;
   line-height: 48px;
-  text-align: justify;  
+  text-align: center;  
   color: #2E3131; 
   margin: 0;
+}
+
+.posts-bold-title p {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;  
+  color: #586268;  
 }
 
 .btn__rounded_pink {
@@ -4847,4 +4855,92 @@ form select option {
 
 .search-result .badges-with-calendar {
   margin-bottom: 0;
+}
+
+/* Questions Page */
+.question-badges div {
+  width: 260px;
+  height: 124px;  
+  background: #FFFFFF;
+  border: 1px solid #DEE2E8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 32px 28px 52px auto;
+}
+
+.question-badges div:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(51, 51, 51, 0.1);
+  color: #AB417F;
+  cursor: url("../img/Mouse.svg"), auto;
+}
+
+.question-badges div img {
+  width: 41px;
+  height: 40px;
+  max-width: 41px;
+  max-height: 40px;
+  margin-bottom: 12px;
+}
+
+.accordion-button {
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #2E3131;  
+  padding-left: 0;
+}
+
+.accordion-button .collapsed {
+  background-color: red;
+}
+
+.accordion-button::after {
+  transform: rotate(270deg);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #AB417F;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform:rotate(360deg);
+  background-image: url("../img/down-pink-arrow.svg")
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: 0 0;
+  background-color: transparent;
+  color: #AB417F;
+  border-color: #E4E8EE;
+  font-family: "SF Pro Display Bold";
+}
+
+.accordion-button .fa-circle {
+  width: 8px;
+  height: 8px;  
+  background: #AB417F;
+  border-radius: 100%;
+  margin-right: 24px;
+}
+
+.accordion-button .fa-circle::before {
+  content: "";
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+  border-bottom: 0
+}
+
+.accordion-flush .accordion-button {
+  border-bottom: 0
+}
+
+.accordion-body {
+  margin-left: 10px;
 }
