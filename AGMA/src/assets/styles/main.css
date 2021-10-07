@@ -2620,7 +2620,8 @@ form select:focus {
 }
 
 .registration-checkbox {
-  margin-top: 44px;
+  margin-bottom: 12px;
+  position: relative;
 }
 
 .registration-content--form input[type = "checkbox"] {
@@ -3356,6 +3357,10 @@ form select:focus {
   color: #2E3131;
 }
 
+.language-knowledge {
+  margin-bottom: 44px;
+}
+
 .language-knowledge button {
   width: 37px;
   height: 28px;
@@ -3487,10 +3492,6 @@ form select option {
 .round-minus:focus {
   outline: none;
   border: none;
-}
-
-.registration-checkbox {
-  position: relative;
 }
 
 .registration-checkbox label.required::after {
@@ -3677,7 +3678,6 @@ form select option {
 
 .modal-content p {
   width: 396px;
-  height: 48px;
   font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 500;
@@ -3708,6 +3708,10 @@ form select option {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.modal-content button:focus {
+  outline: none;
 }
 
 /* Badges with Calendar 4x4 */
@@ -4943,4 +4947,136 @@ form select option {
 
 .accordion-body {
   margin-left: 10px;
+}
+
+/* Idea Bank */
+.idea-bank h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 20px;
+  line-height: 32px;  
+  text-align: justify;  
+  color: #AB417F;  
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.idea-bank p {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;  
+  color: #2E3131;
+}
+
+.idea-bank h6 {
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #2E3131;
+}
+
+.idea-bank h6 span {
+  color: red; 
+}
+
+.idea-bank-registration {
+  position: relative;
+  margin-top: 24px  ;
+}
+
+.idea-bank .form-group label.required::after {
+  content: "*";
+  color: red;
+  margin-left: 3px;
+}
+
+.idea-registration-content {
+  width: 100%;
+}
+
+.idea-registration-content input {
+  width: 548px;
+}
+
+.idea-registration-content .wide-input input {
+  width: 100%;
+}
+
+.idea-registration-textarea textarea {
+  height: 120px;
+  background: #FFFFFF;
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  overflow-y: hidden;
+}
+
+.idea-registration-textarea textarea::placeholder {
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #ACB3B8;
+}
+
+.idea-checkbox {
+  margin-top: 32px;
+}
+
+.idea-buttons button {
+  margin-top: 0;
+}
+
+.idea-buttons button:focus {
+  box-shadow: 0 0;
+}
+
+/* Idea Modal */
+.idea-modal .modal-dialog {
+  max-width: 649px;
+  width: 649px;
+}
+
+.idea-modal .modal-content {
+  padding: 40px;
+}
+
+.idea-modal .modal-content h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 23px;
+  line-height: 40px;
+  color: #2E3131;
+  margin-top: 0;
+  margin-bottom: 44px;
+  text-align: left;
+}
+
+.idea-modal .modal-content p {
+  width: 565px;
+  color: #2E3131;
+  margin-bottom: 44px;
+  text-align: left;
+}
+
+.idea-modal .modal-content p span {
+  color: #AB417F;
+}
+
+.idea-modal .modal-content button {
+  padding: 16px 72px;
+  height: 56px;  
+  background: #AB417F;
+  border-radius: 4px;
+  margin-right: 28px;
+  width: auto;
+}
+
+.idea-modal .modal-content .modal-grey-btn {
+  padding: 16px 72px;
+  height: 56px;  
+  background: #fff;
+  border: 1px solid #2E3131;
+  border-radius: 4px;
+  color: #2E3131;
+  width: auto;
 }
