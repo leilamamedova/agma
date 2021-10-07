@@ -213,7 +213,7 @@ a {
 .btn__rounded_pink {
   align-items: center;
   padding: 12px 32px;
-  width: 176px;
+  width: auto;
   height: 48px;  
   background: #AB417F;
   border-radius: 30px;
@@ -874,7 +874,6 @@ li.has-child > a::after {
 }
 
 .menu-social-icons .fa-facebook {
-    color: #4267B2;
     margin-left: -18px;
 }
 
@@ -1495,7 +1494,7 @@ outline: none;
 
 /* Innovations */
 #innovations {
-    height: 664px;
+  padding-bottom: 84px;
 }
 
 .innovations-title {
@@ -1557,25 +1556,41 @@ outline: none;
 
 .innovation-badges {
     margin-right: 28px;
+    max-width: 260px;
+    width: 100%;
+    position: relative;
 }
 
 .innovation-badges img {
     max-width: 260px;
     max-height: 220px;
-    width: 260px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
+    object-fit: cover;
 }
 
-.innovation-badge-title h5 {    
-    height: 56px;
+.innovation-badge-title {
+  width: 100%;
+  height: 155px;
+  position: relative;
+}
+
+.innovation-badge-title h5 {  
     font-family: "SF Pro Display Medium";
-    font-style: normal;
-    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     color: #2E3131;
     margin-top: 16px;
+    /* Truncate */
+    overflow:hidden;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;    
 }
 
 .innovation-badge-title h5:hover {
@@ -1583,13 +1598,8 @@ outline: none;
   color: #AB417F;
 }
 
-.innovation-badge-title h6 {    
-    height: 48px;
-    left: 158px;
-    top: 3545px;
+.innovation-badge-title h6 { 
     font-family: "SF Pro Display Regular";
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 24px;    
     color: #586268;
@@ -1603,6 +1613,12 @@ outline: none;
     overflow: hidden !important;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
+    word-wrap: break-word;
+}
+
+.innovation-badge-title p {
+  position: absolute;
+  bottom: 0px;
 }
 
 .innovation-badge-title p img {
@@ -1643,7 +1659,6 @@ outline: none;
     width: 1124px;
     height: 304px;    
     border-radius: 10px;
-    margin-top: 20px;
     margin-bottom: 80px;
     text-align: center;
 }
@@ -1772,6 +1787,7 @@ outline: none;
     height: 80px;
     margin-top: 32px;
     margin-left: 32px;
+    border-radius: 100%;
 }
 
 .statistics-badges h5 {
@@ -2015,7 +2031,6 @@ text-decoration: none;
 
 .social-icons .fa-facebook {
     margin-left: -18px;
-    color: #4267B2;
 }
 
 .fa-facebook:hover {
@@ -3438,7 +3453,6 @@ form select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #ACB3B8;
 
   background-image: url("../img/angle-down.svg");
   background-repeat: no-repeat;
@@ -3721,23 +3735,41 @@ form select option {
 
 .badge-with-calendar {
   margin-right: 28px;
+  max-width: 260px;
+  width: 100%;
+  position: relative;
 }
 
 .badge-with-calendar img {
   max-width: 260px;
   max-height: 220px;
-  width: 260px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
+  object-fit: cover;
+}
+
+.badge-with-calendar-title {
+  width: 100%;
+  height: 155px;
+  position: relative;
 }
 
 .badge-with-calendar-title h5 {
-  height: 56px;
   font-family: "SF Pro Display Medium";
   font-size: 20px;
   line-height: 28px;
   color: #2E3131;
   margin-top: 16px;
+   /* Truncate */
+   overflow:hidden;
+   -webkit-box-orient: vertical;
+   display: block;
+   display: -webkit-box;
+   overflow: hidden !important;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 2;
+   word-wrap: break-word;    
 }
 
 .badge-with-calendar-title h5:hover {
@@ -3761,6 +3793,7 @@ form select option {
   overflow: hidden !important;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
+  word-wrap: break-word;
 }
 
 .badge-with-calendar-title span {
@@ -3877,8 +3910,6 @@ form select option {
 }
 
 .single-info-page-side-badge-text h6 {
-  width: 210px;
-  height: 40px;  
   font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 600;
@@ -4447,6 +4478,10 @@ form select option {
   margin: 16px auto 52px auto;  
 }
 
+.badges-with-text .row:nth-child(2) {
+  margin-top: 24px;
+}
+
 .badge-with-text {
   margin-right: 28px;
   margin-bottom: 16px;
@@ -4600,6 +4635,7 @@ form select option {
 
 .badge-with-partners {
   margin-bottom: 32px;
+  width: 244px;
 }
 
 .badge-with-partners-image {
@@ -5079,4 +5115,122 @@ form select option {
   border-radius: 4px;
   color: #2E3131;
   width: auto;
+}
+
+/* Forum */
+.forum__search__box {
+  position: relative;
+  max-width: 260px;
+}
+
+.forum__search {
+  width: 260px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 48px;
+}
+
+.forum__search:focus{
+  outline: none;
+}
+
+.forum__search::placeholder {
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #ACB3B8;
+}
+
+.forum__search__image {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  color: #2E3131;
+}
+
+.forum-header select {
+  width: 260px;
+  height: 48px;  
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E3131;
+  padding-left: 16px;
+
+  background-image: url("../img/angle-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.forum-header select:focus {
+  outline: none;
+}
+
+.forum-header .btn {
+  margin-top: 0;
+}
+
+.forum-grey-header {
+  width: 356px;
+  height: 48px;  
+  background: #849097;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.forum-topic {
+  margin-bottom: 0;
+}
+
+.forum-author {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;  
+  color: #849097;  
+  margin-bottom: 14px;
+}
+
+.forum-author span {
+  color: #2E3131;
+}
+
+.forum-comment {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #586268;
+  margin-bottom: 12px;
+  /* Truncate */
+  overflow:hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+}
+
+.forum-side {
+  background: transparent;
+  box-shadow: 0 0;
 }
