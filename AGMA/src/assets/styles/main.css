@@ -197,7 +197,6 @@ a {
   font-family: "SF Pro Display Bold";
   font-size: 32px;
   line-height: 48px;
-  text-align: center;  
   color: #2E3131; 
   margin: 0;
 }
@@ -213,7 +212,7 @@ a {
 .btn__rounded_pink {
   align-items: center;
   padding: 12px 32px;
-  width: 176px;
+  width: auto;
   height: 48px;  
   background: #AB417F;
   border-radius: 30px;
@@ -226,6 +225,10 @@ a {
 
 .btn__rounded_pink:hover {
   color: #fff;
+}
+
+.btn__rounded_pink:focus {
+  box-shadow: 0 0;
 }
 
 .line-through-class {
@@ -874,7 +877,6 @@ li.has-child > a::after {
 }
 
 .menu-social-icons .fa-facebook {
-    color: #4267B2;
     margin-left: -18px;
 }
 
@@ -1495,7 +1497,7 @@ outline: none;
 
 /* Innovations */
 #innovations {
-    height: 664px;
+  padding-bottom: 84px;
 }
 
 .innovations-title {
@@ -1557,25 +1559,41 @@ outline: none;
 
 .innovation-badges {
     margin-right: 28px;
+    max-width: 260px;
+    width: 100%;
+    position: relative;
 }
 
 .innovation-badges img {
     max-width: 260px;
     max-height: 220px;
-    width: 260px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
+    object-fit: cover;
 }
 
-.innovation-badge-title h5 {    
-    height: 56px;
+.innovation-badge-title {
+  width: 100%;
+  height: 155px;
+  position: relative;
+}
+
+.innovation-badge-title h5 {  
     font-family: "SF Pro Display Medium";
-    font-style: normal;
-    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     color: #2E3131;
     margin-top: 16px;
+    /* Truncate */
+    overflow:hidden;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;    
 }
 
 .innovation-badge-title h5:hover {
@@ -1583,13 +1601,8 @@ outline: none;
   color: #AB417F;
 }
 
-.innovation-badge-title h6 {    
-    height: 48px;
-    left: 158px;
-    top: 3545px;
+.innovation-badge-title h6 { 
     font-family: "SF Pro Display Regular";
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 24px;    
     color: #586268;
@@ -1603,6 +1616,12 @@ outline: none;
     overflow: hidden !important;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
+    word-wrap: break-word;
+}
+
+.innovation-badge-title p {
+  position: absolute;
+  bottom: 0px;
 }
 
 .innovation-badge-title p img {
@@ -1643,7 +1662,6 @@ outline: none;
     width: 1124px;
     height: 304px;    
     border-radius: 10px;
-    margin-top: 20px;
     margin-bottom: 80px;
     text-align: center;
 }
@@ -1772,6 +1790,7 @@ outline: none;
     height: 80px;
     margin-top: 32px;
     margin-left: 32px;
+    border-radius: 100%;
 }
 
 .statistics-badges h5 {
@@ -2015,7 +2034,6 @@ text-decoration: none;
 
 .social-icons .fa-facebook {
     margin-left: -18px;
-    color: #4267B2;
 }
 
 .fa-facebook:hover {
@@ -2845,7 +2863,6 @@ form select:focus {
   margin-left: 3px;
 }
 
-
 /* Image Upload */
 #form-input--file {
   position: relative;
@@ -3125,6 +3142,10 @@ form select:focus {
   margin-top: 15px;
 }
 
+.drop-zoon__paragraph a {
+  text-decoration: underline;
+}
+
 .drop-zoon:hover .drop-zoon__icon,
 .drop-zoon:hover .drop-zoon__paragraph {
   opacity: 0.7;
@@ -3303,6 +3324,11 @@ form select:focus {
   margin-top: 16px;
 }
 
+.upload-require span {
+  color: #AB417F;
+  font-weight: bold;
+}
+
 .uploaded-file__name {
   width: 100%;
   height: 24px;  
@@ -3438,7 +3464,6 @@ form select {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: #ACB3B8;
 
   background-image: url("../img/angle-down.svg");
   background-repeat: no-repeat;
@@ -3721,23 +3746,41 @@ form select option {
 
 .badge-with-calendar {
   margin-right: 28px;
+  max-width: 260px;
+  width: 100%;
+  position: relative;
 }
 
 .badge-with-calendar img {
   max-width: 260px;
   max-height: 220px;
-  width: 260px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
+  object-fit: cover;
+}
+
+.badge-with-calendar-title {
+  width: 100%;
+  height: 155px;
+  position: relative;
 }
 
 .badge-with-calendar-title h5 {
-  height: 56px;
   font-family: "SF Pro Display Medium";
   font-size: 20px;
   line-height: 28px;
   color: #2E3131;
   margin-top: 16px;
+   /* Truncate */
+   overflow:hidden;
+   -webkit-box-orient: vertical;
+   display: block;
+   display: -webkit-box;
+   overflow: hidden !important;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 2;
+   word-wrap: break-word;    
 }
 
 .badge-with-calendar-title h5:hover {
@@ -3761,6 +3804,7 @@ form select option {
   overflow: hidden !important;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
+  word-wrap: break-word;
 }
 
 .badge-with-calendar-title span {
@@ -3843,7 +3887,7 @@ form select option {
 
 .single-info-page-side {
   width: 356px;
-  height: 888px;  
+  height: 100%;  
   background: linear-gradient(162.1deg, rgba(255, 255, 255, 0.7) 4.67%, rgba(255, 255, 255, 0.7) 87.8%);
   box-shadow: 40px 20px 100px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
@@ -3877,11 +3921,7 @@ form select option {
 }
 
 .single-info-page-side-badge-text h6 {
-  width: 210px;
-  height: 40px;  
   font-family: "SF Pro Display Medium";
-  font-style: normal;
-  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #2E3131;  
@@ -4447,6 +4487,10 @@ form select option {
   margin: 16px auto 52px auto;  
 }
 
+.badges-with-text .row:nth-child(2) {
+  margin-top: 24px;
+}
+
 .badge-with-text {
   margin-right: 28px;
   margin-bottom: 16px;
@@ -4600,6 +4644,7 @@ form select option {
 
 .badge-with-partners {
   margin-bottom: 32px;
+  width: 244px;
 }
 
 .badge-with-partners-image {
@@ -5079,4 +5124,357 @@ form select option {
   border-radius: 4px;
   color: #2E3131;
   width: auto;
+}
+
+/* Forum */
+.forum__search__box {
+  position: relative;
+  max-width: 260px;
+  margin-left: 98px;
+  margin-right: 28px;
+}
+
+.forum__search {
+  width: 260px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 48px;
+}
+
+.forum__search:focus{
+  outline: none;
+}
+
+.forum__search::placeholder {
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #ACB3B8;
+}
+
+.forum__search__image {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  color: #2E3131;
+}
+
+.forum-header select {
+  width: 260px;
+  height: 48px;  
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E3131;
+  padding-left: 16px;
+
+  background-image: url("../img/angle-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.forum-header select:focus {
+  outline: none;
+}
+
+.forum-header .btn {
+  margin-top: 0;
+}
+
+.forum-grey-header {
+  width: 100%;
+  height: 48px;  
+  background: #849097;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.forum-topic {
+  margin-bottom: 0;
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #2E3131;  
+  /* Truncate */
+  overflow:hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+}
+
+.forum-topic:hover {
+  color: #AB417F;
+}
+
+.forum-author {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #849097;  
+  margin-bottom: 14px;
+}
+
+.forum-author span {
+  color: #2E3131;
+}
+
+.forum-author a {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify; 
+  color: #2E3131;  
+}
+
+.forum-author a:hover {
+  text-decoration-line: underline; 
+}
+
+.forum-comment {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #586268;
+  margin-bottom: 12px;
+  /* Truncate */
+  overflow:hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+}
+
+.forum-side {
+  background: transparent;
+  box-shadow: 0 0;
+}
+
+.forum-side a:last-child div {
+  border-bottom: 0;
+}
+
+.forum-main {
+  width: 740px;
+  height: 100%;  
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
+.forum-main-badge-text {
+  width: 100%;
+}
+
+.forum-main-badge-text div {
+  padding-left: 0;
+}
+
+.forum-main-badge-text .col-3 {
+  text-align: right;
+}
+
+.forum-main-badge {
+  border-bottom: 1px solid #E4E8EE;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.forum-main-badge-text{
+  margin-left: 16px;
+  margin-right: 20px
+}
+
+.forum-comments-num {
+  margin-bottom: 0;
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #2E3131;  
+  /* Truncate */
+  overflow:hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+}
+
+.forum-watch-num {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #849097;  
+  margin-bottom: 14px;
+}
+
+.forum-main div:last-child {
+  border-bottom: 0;
+}
+
+.forum-pagination {
+  margin-top: 48px;
+}
+
+.forum-page button {
+  margin-top: 0;
+}
+
+.forum-page .col-10 {
+  width: 780px;
+}
+
+.forum-page .col-2 {
+  width: 345px;
+  text-align: right;
+}
+
+.forum-page h6 {
+  font-family: "SF Pro Display Medium";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;  
+  color: #000000;  
+}
+
+/* Useful Info Page */
+.useful-info-list {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+.useful-list-header {
+  width: 100%;
+  height: 56px;  
+  background: #F9FAFB;
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-left: 24px;
+}
+
+.useful-list-header h1 {
+  font-family: "SF Pro Display Medium";
+  font-size: 20px;
+  line-height: 32px;
+  color: #2E3131;
+  margin-bottom: 0;
+}
+
+.useful-list-content {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.useful-list-content ul {
+  list-style: url("../img/list-paper-icon.svg");
+  padding-left: 45px;
+  margin: 0;
+}
+
+.useful-list-content ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.useful-list-content ul li:hover {
+  text-decoration-line: underline;
+  cursor: url("../img/Mouse.svg"), auto;
+}
+
+/* Useful Page Null */
+.useful-list-none {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.useful-list-none ul {
+  color: #AB417F;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 24px;
+}
+
+/* New Topic Page */
+#new-topic-page .form-group label.required::after {
+  content: "VACİBDİR";
+  color: #AA1414;
+  margin-left: 12px;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.new-topic-tag {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.new-topic-tag p {
+  font-family: "SF Pro Display Medium";
+  font-size: 14px;
+  line-height: 24px;  
+  color: #586268;
+  margin-bottom: 0;
+}
+
+.radio-buttons .form-check {
+  padding-left: 20px;
+}
+
+.radio-buttons div:nth-child(1) {
+  margin-right: 53px;
+}
+
+.radio-buttons input[type="radio"] {
+  width: 22px;
+  height: 22px;  
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-right: 13px;
+}
+
+.radio-buttons label {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;  
+  color: #000000;  
+}
+
+.radio-buttons input[type="radio"]:checked {
+  background-image:url("../img/radio-button.svg");
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
 }
