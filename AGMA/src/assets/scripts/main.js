@@ -413,18 +413,3 @@ $(".toggle-password").click(function () {
     input.type = "password";
   }
 });
-
-
-function addRow(){
-  const row = document.querySelectorAll('.language-select')
-  const clonedRow = row[0].cloneNode(true)
-  const container = document.querySelector('.language-knowledge')
-
-  container.append(clonedRow)
-}
-
-const addBtn = document.querySelector('#addRowBtn')
-addBtn.addEventListener('click',(e)=>{
-  e.preventDefault()
-  addRow()
-})
