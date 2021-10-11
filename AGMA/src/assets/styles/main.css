@@ -231,6 +231,23 @@ a {
   box-shadow: 0 0;
 }
 
+.btn__rounded_pink_outline {
+  align-items: center;
+  padding: 12px 32px;
+  width: auto;
+  height: 48px;  
+  background: #FFFFFF;
+  border: 1px solid #AB417F;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;  
+  color: #AB417F;  
+  margin-top: 52px;
+  margin-right: 32px;
+}
+
 .line-through-class {
   text-decoration-line: line-through;
 }
@@ -1094,8 +1111,9 @@ li.has-child > a::after {
 #media .card-list .card img {
     max-width: 144px;
     max-height: 72px;
-    width: 144px;
-    height: 72px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .media__title {
@@ -1298,7 +1316,7 @@ outline: none;
     font-size: 24px;
     line-height: 32px;
     color: #2E3131;
-    margin: 32px auto 16px 32px;
+    margin: 32px 32px 16px 32px;
 }
 
 .course-box-title h3 {
@@ -1309,7 +1327,7 @@ outline: none;
     font-size: 16px;
     line-height: 24px;
     color: #586268;
-    margin: 16px auto 24px 32px;
+    margin: 16px 32px 24px 32px;
 }
 
 .course-box-button {
@@ -1330,8 +1348,9 @@ outline: none;
 .course-box-badges img {
     max-width: 250px;
     max-height: 120px;
-    width: 250px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 4px;
 }
 
@@ -1486,8 +1505,9 @@ outline: none;
 .fam-courses-badges img {
     max-width: 260px;
     max-height: 120px;
-    width: 260px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 4px;
 }
 
@@ -1786,8 +1806,9 @@ outline: none;
 .statistics-badges img {
     max-width: 80px;
     max-height: 80px;
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     margin-top: 32px;
     margin-left: 32px;
     border-radius: 100%;
@@ -2365,8 +2386,9 @@ text-decoration: none;
 
 .login-side1 {
   background-image: url("../img/login-side1.png");
-  width: 260px;
-  height: 264px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
   max-width: 260px;
   max-height: 264px;
@@ -2376,8 +2398,9 @@ text-decoration: none;
 
 .login-side2 {
   background-image: url("../img/login-side2.png");
-  width: 260px;
-  height: 264px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
   max-width: 260px;
   max-height: 264px;
@@ -2764,8 +2787,9 @@ form select:focus {
 
 .registration-side1 {
   background-image: url("../img/login-side1.png");
-  width: 260px;
-  height: 264px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
   max-width: 260px;
   max-height: 264px;
@@ -2775,8 +2799,9 @@ form select:focus {
 
 .registration-side2 {
   background-image: url("../img/login-side2.png");
-  width: 260px;
-  height: 264px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
   max-width: 260px;
   max-height: 264px;
@@ -3870,8 +3895,10 @@ form select option {
 .single-info-page-main img {
   margin-bottom: 28px;
   max-width: 740px;
-  height: 372px;
   max-height: 372px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .single-info-page-main p {
@@ -3908,9 +3935,10 @@ form select option {
 }
 
 .single-info-page-side-badge img {
-  width: 86px;
-  max-width: 86px;
-  height: 76px;    
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 86px;  
   max-height: 76px;
   border-radius: 4px;
 }
@@ -4200,8 +4228,9 @@ form select option {
 .news-box-badges img {
   max-width: 740px;
   max-height: 372px;
-  width: 740px;
-  height: 372px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -4251,8 +4280,9 @@ form select option {
 .trainings-box-badges img {
   max-width: 260px;
   max-height: 120px;
-  width: 260px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -4403,8 +4433,9 @@ form select option {
 }
 
 .table-side1 {
-  width: 260px;
-  height: 338px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 260px;
   max-height: 338px;
   border-radius: 4px;
@@ -4413,8 +4444,9 @@ form select option {
 /* Strukcture Page Single */
 .structure-page img {
   float: left;
-  width: 356px;
-  height: 372px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 356px;
   max-height: 372px;
   border-radius: 6px;
@@ -4466,8 +4498,9 @@ form select option {
 }
 
 .structure-banner-image img {
-  width: 356px;
-  height: 372px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 356px;
   max-height: 372px;  
   border-radius: 0px 6px 6px 0px;
@@ -4499,8 +4532,9 @@ form select option {
 .badge-with-text img {
   max-width: 260px;
   max-height: 260px;
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
   margin-bottom: 16px;
 }
@@ -4557,8 +4591,9 @@ form select option {
 }
 
 .about-bannerwh-image img {
-  width: 548px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 548px;
   max-height: 300px;
   border-radius: 6px;
@@ -4598,7 +4633,7 @@ form select option {
 }
 
 .about-item {
-  height: 448px;
+  height: 100%;
   width: 100%;
   max-width: 100%;
   max-height: 448px;
@@ -4660,8 +4695,9 @@ form select option {
 }
 
 .badge-with-partners img {
-  width: 204px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 204px;
   max-height: 120px;
   border-radius: 6px;
@@ -4705,10 +4741,9 @@ form select option {
 }
 
 .cooperation-member .side-info .side-info-img img {
-  width: 356px;
-  height: 372px;
+  height: 100%;
+  object-fit: cover;
   max-width: 356px;
-  max-height: 372px;
   border-radius: 6px 6px 0px 0px;
 }
 
@@ -4770,7 +4805,7 @@ form select option {
   }
 }
 
-.cooperation-member .main-info p {
+.cooperation-member .main-info div {
   font-family: "SF Pro Display Regular";
   font-size: 16px;
   line-height: 28px;
@@ -4808,8 +4843,9 @@ form select option {
 .membership-video .card-list .card-image {
   max-width: 356px;
   max-height: 220px;
-  width: 356px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .membership-video .card-list .card-image img {
@@ -4928,8 +4964,9 @@ form select option {
 }
 
 .question-badges div img {
-  width: 41px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   max-width: 41px;
   max-height: 40px;
   margin-bottom: 12px;
@@ -5279,7 +5316,7 @@ form select option {
 }
 
 .forum-main {
-  width: 740px;
+  width: 100%;
   height: 100%;  
   padding-top: 4px;
   padding-bottom: 6px;
@@ -5448,6 +5485,7 @@ form select option {
 
 .radio-buttons .form-check {
   padding-left: 20px;
+  margin-bottom: 24px;
 }
 
 .radio-buttons div:nth-child(1) {
@@ -5477,4 +5515,149 @@ form select option {
   background-size: cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
+  background-color: #AB417F;
+}
+
+/* Tags Input */
+.label-info {
+  background: #AB417F;
+  border-radius: 2px;
+  padding: 3px;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  background: #932E69;
+  border-radius: 2px;
+}
+
+.bootstrap-tagsinput .tag {
+  padding: 8px 0 8px 8px;
+}
+
+/* Ckeditor */
+.ck.ck-editor__main>.ck-editor__editable {
+  min-height: 428px;
+}
+
+#ck-editor-block .ck-focused{
+  box-shadow: 0 0;
+  outline: none;
+  border: 1px solid #c4c4c4;
+}
+
+#ck-editor-block .required-top::after {
+  content: "VACİBDİR";
+  color: #AA1414;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Attach */
+.attach-text h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 20px;
+  line-height: 32px;
+  color: #932E69;
+  margin-bottom: 8px;
+}
+
+.attach-text p {
+  margin-bottom: 24px;
+}
+
+.attach-text p span {
+  font-weight: bold;
+}
+
+#new-topic-page .btn__rounded_pink {
+  margin-top: 32px;
+}
+
+/* Forum Single Page */
+.forum-single-header {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.forum-single-header button {
+  margin-top: 0;
+}
+
+.forum-author-badge  {
+  width: auto;
+  min-width: 200px;
+  margin-left: 20px;
+}
+
+.forum-author-badge img {
+  border-radius: 100%;
+  max-width: 48px;
+  max-height: 48px;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.forum-author-badge p {
+  text-align: left;
+  margin-bottom: 0;
+}
+.forum-single-comment {
+  margin-bottom: 24px;
+}
+
+.forum-comment-header {
+  height: 48px;
+  background: #DEE2E8;
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.comment-header-author {
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;  
+  color: #586268;  
+}
+
+.comment-header-date {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;  
+  color: #586268;  
+}
+
+.forum-comment-main {
+  width: 100%;
+  height: 100%;  
+  background: #FFFFFF;
+  border: 1px solid #E4E8EE;
+  box-sizing: border-box;
+  padding: 24px 20px;
+}
+
+.forum-comment-main p:last-child {
+  margin-bottom: 0;
+}
+
+.forum-comment-main img {
+  margin-bottom: 24px;
+  max-width: 519px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.forum-single-pagination {
+  margin-top: 28px;
+  margin-bottom: 52px;
 }
