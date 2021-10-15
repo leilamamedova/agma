@@ -413,3 +413,16 @@ $(".toggle-password").click(function () {
     input.type = "password";
   }
 });
+
+// Date Picker
+$("input[type='date']").css("color",'#ACB3B8');
+$("input[type='date']").click(function () {
+  $(this).css("color",'#2E3131');
+})  
+
+// Select Options
+$(document).ready(function () {
+  $('select').selectize({
+      sortField: 'text'
+  });
+});

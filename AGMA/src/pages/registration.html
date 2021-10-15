@@ -7,9 +7,9 @@
     <title>Azərbaycan Gənc Müəllimlər Assosiasiyası</title>
     <link href="../assets/vendor/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/fonts/FontAwesome/css/all.min.css" rel="stylesheet" />
-    <link href="../assets/vendor/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/css/owl.carousel.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="../assets/vendor/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <link href="../assets/styles/main.css" rel="stylesheet" />
-    <link  href="../assets/vendor/css/datepicker.css" rel="stylesheet">
  </head>
 
 <body>
@@ -273,15 +273,10 @@
                                                 <input type="name" class="form-control" placeholder="Daxil edin">
                                             </div>
                                             <div class="col-6 form-group country">
-                                                <label for="" class="form-label required">Tədris etdiyiniz şəhər/rayon</label>
-                                                <div class="form-group">                                                
-                                                    <select data-placeholder="Seçin">
-                                                        <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                        <option value="Baki">İngiliscə</option>
-                                                        <option value="Naxçıvan">Rusca</option>
-                                                        <i class="fal fa-angle-down"></i>
-                                                    </select>
-                                                </div>
+                                                <div class="form-group">
+                                                    <label for="bal" class="form-label required">MİQ imtahanından yığdığınız bal</label>
+                                                    <input type="name" class="form-control" placeholder="Daxil edin">
+                                                </div>                                                
                                             </div>
                                         </div>
 
@@ -290,16 +285,19 @@
                                                 <label for="surname" class="form-label required">Soyadınız</label>
                                                 <input type="name" class="form-control" placeholder="Daxil edin">
                                             </div>
-                                            <div class="col-6 form-group work-place">
-                                                <label for="" class="form-label required">Tədris etdiyiniz müəssisənin adı</label>
-                                                <div class="form-group">                                                
-                                                    <select data-placeholder="Seçin">
-                                                        <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                        <option value="Baki">...</option>
-                                                        <option value="Naxçıvan">...</option>
+                                            <div class="col-6 form-group country">
+                                                <label for="" class="form-label required">Tədris etdiyiniz şəhər/rayon</label>
+                                                <div class="form-group">  
+                                                    <select id="select-options" placeholder="Seçin">
+                                                        <option value="">Seçin</option>
+                                                        <option>Alabama</option>
+                                                        <option>Alaska</option>
+                                                        <option>California</option>
+                                                        <option>Colorado</option>
+                                                        <option>Delaware</option> 
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div>                                           
                                         </div>
 
                                         <div class="row mt-16">
@@ -307,43 +305,64 @@
                                                 <label for="parentname" class="form-label required">Atanızın adı</label>
                                                 <input type="name" class="form-control" placeholder="Daxil edin">
                                             </div>
-                                            <div class="col-6 form-group">
-                                                <label for="number" class="form-label required">Əlaqə nömrəsi</label>
-                                                <input type="name" class="form-control" placeholder="Daxil edin">
-                                            </div>
+                                            <div class="col-6 form-group work-place">
+                                                <label for="" class="form-label required">Tədris etdiyiniz müəssisənin adı</label>
+                                                <div class="form-group">                                                
+                                                    <select id="select-options" placeholder="Seçin">
+                                                        <option value="">Seçin</option>
+                                                        <option>Alabama</option>
+                                                        <option>Alaska</option>
+                                                        <option>California</option>
+                                                        <option>Colorado</option>
+                                                        <option>Delaware</option> 
+                                                    </select>
+                                                </div>
+                                            </div>                                           
                                         </div>
 
                                         <div class="row d-block d-lg-flex">
                                             <div class="col-6 date-input">
                                                 <label for="number" class="form-label required">Doğum tarixiniz</label>
-                                                <div class="docs-datepicker">
-                                                    <div class="input-group">
-                                                      <input type="text" class="form-control docs-date" name="date" placeholder="Seçin" autocomplete="off">
-                                                      <div class="input-group-append">
-                                                        <button type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled="">
-                                                            <i class="fal fa-calendar-alt"></i>
-                                                        </button>
-                                                      </div>
-                                                    </div>
-                                                    <div class="docs-datepicker-container"></div>
-                                                </div>
+                                                <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Seçin">  
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled="">
+                                                        <i class="fal fa-calendar-alt"></i>
+                                                    </button>
+                                                </div>                                             
+                                            </div>
+                                            <div class="col-6 form-group" id="number-input">
+                                                <label for="number" class="form-label required">Əlaqə nömrəsi</label>
+                                                <input type="name" class="form-control">
+                                                <span>+994</span>
+                                            </div>                                           
+                                        </div>
+
+                                        <div class="row mt-16">
+                                            <div class="col-6 form-group" id="reg-password-input">
+                                                <label for="" class="d-block">Şifrə</label> 
+                                                <input type="password" placeholder="Daxil edin" class="password_input">
+                                                <i class="toggle-password far fa-eye-slash"></i>
                                             </div>
                                             <div class="col-6 form-group degree">
                                                 <label for="" class="form-label required">Təhsil dərəcəniz</label>
                                                 <div class="form-group">                                                
-                                                    <select data-placeholder="Seçin">
-                                                        <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                        <option value="Baki">...</option>
-                                                        <option value="Naxçıvan">...</option>
+                                                    <select id="select-options" placeholder="Seçin">
+                                                        <option value="">Seçin</option>
+                                                        <option>Alabama</option>
+                                                        <option>Alaska</option>
+                                                        <option>California</option>
+                                                        <option>Colorado</option>
+                                                        <option>Delaware</option> 
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="row mt-16">
-                                            <div class="col-6 form-group">
-                                                <label for="fin" class="form-label required">Şəxsiyyət vəsiqənizin FİN kodu</label>
-                                                <input type="name" class="form-control" placeholder="Daxil edin">
+                                            <div class="col-6 form-group" id="reg-password-input">
+                                                <label for="" class="d-block">Təkrar şifrə</label> 
+                                                <input type="password" placeholder="Daxil edin" class="password_input">
+                                                <i class="toggle-password far fa-eye-slash"></i>
                                             </div>
                                             <div class="col-6 form-group">
                                                 <label for="email" class="form-label required">Elektron poçt ünvanınız</label>
@@ -353,17 +372,30 @@
 
                                         <div class="row mt-16">
                                             <div class="col-6 form-group">
-                                                <label for="utis" class="form-label required">UTİS kodu</label>
+                                                <label for="fin" class="form-label required">Şəxsiyyət vəsiqənizin FİN kodu</label>
                                                 <input type="name" class="form-control" placeholder="Daxil edin">
                                             </div>
                                             <div class="col-6 form-group">
                                                 <label for="facebook-url" class="form-label">"Facebook" ünvanınızın linki</label>
                                                 <input type="url" class="form-control" placeholder="Daxil edin">
-                                            </div>
+                                            </div>                                            
                                         </div>
 
                                         <div class="row mt-16">
                                             <div class="col-6 form-group">
+                                                <label for="utis" class="form-label required">UTİS kodu</label>
+                                                <input type="name" class="form-control" placeholder="Daxil edin">
+                                            </div>
+                                            <div class="col-6 form-group">
+                                                <label for="linkedin-url" class="form-label">"Linkedin" ünvanınızın linki</label>
+                                                <input type="url" class="form-control error" placeholder="Daxil edin">
+                                                <span class="error-text">Kod yanlışdır.</span>
+                                            </div>                                            
+                                        </div>
+
+                                        <div class="row mt-16">
+                                            <div class="col-6 form-group">
+
                                                 <label for="picture" class="form-label required">Şəkil (3*4 və ya 4*6)</label>
                                                 <div class="l-container">
                                                     <div class="form-controlGroup">
@@ -376,46 +408,33 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-6 form-group">
-                                                <label for="linkedin-url" class="form-label">"Linkedin" ünvanınızın linki</label>
-                                                <input type="url" class="form-control error" placeholder="Daxil edin">
-                                                <span class="error-text">Kod yanlışdır.</span>
-                                            </div>
-                                        </div>
 
-                                        <div class="row mt-16">
-                                            <div class="col-6 form-group">
                                                 <div class="row d-block d-lg-flex">
-                                                    <div class="col date-input">
+                                                    <div class="date-input">
                                                         <label for="" class="d-block">Müəllimlik fəaliyyətinə başladığınız tarix</label> 
-                                                        <div class="docs-datepicker">
-                                                            <div class="input-group">
-                                                              <input type="text" class="form-control docs-date" name="date" placeholder="Seçin" autocomplete="off">
-                                                              <div class="input-group-append">
-                                                                <button type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled="">
-                                                                    <i class="fal fa-calendar-alt"></i>
-                                                                </button>
-                                                              </div>
-                                                            </div>
-                                                            <div class="docs-datepicker-container"></div>
+                                                        <input type="date" name="dateofwork" id="dateofwork" placeholder="Seçin">  
+                                                        <div class="input-group-append">
+                                                            <button type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled="">
+                                                                <i class="fal fa-calendar-alt"></i>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-16 subject">
                                                     <label for="" class="form-label required">Tədris etdiyiniz fənn</label>
                                                     <div class="form-group">                                                
-                                                        <select data-placeholder="Seçin">
-                                                            <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                            <option value="Riyaziyyat">İnformatika</option>
+                                                        <select id="select-options" placeholder="Seçin">
+                                                            <option value="">Seçin</option>
+                                                            <option>Alabama</option>
+                                                            <option>Alaska</option>
+                                                            <option>California</option>
+                                                            <option>Colorado</option>
+                                                            <option>Delaware</option> 
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="row mt-16">
-                                                    <div class="form-group">
-                                                        <label for="bal" class="form-label required">MİQ imtahanından yığdığınız bal</label>
-                                                        <input type="name" class="form-control" placeholder="Daxil edin">
-                                                    </div>
+                                                   
                                                 </div>
                                             </div>
 
@@ -423,82 +442,8 @@
                                                 <label for="text-area" class="form-label required">AGMA-ya üzvlük karyeranızda hansı imkanlar yaradacaq?</label>
                                                 <textarea name="" class="form-control" id="text-area" class="textinput" placeholder="Daxil edin"></textarea>
                                             </div>
-                                        </div>   
+                                        </div>                                           
                                         
-                                        <div class="row d-block d-lg-flex upload-file container">
-                                            <label for="" class="form-label">Peşəkar inkişafla bağlı əldə etdiyiniz sertifikatlar</label>
-                                            <!-- Upload Area -->
-                                            <div id="uploadArea" class="upload-area">                                       
-                                                <!-- Drop Zoon -->
-                                                <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
-                                                    <span class="drop-zoon__icon">
-                                                        <i class="fas fa-cloud-upload"></i>
-                                                    </span>
-                                                    <p class="drop-zoon__paragraph">Faylları yükləmək üçün sürüşdürüb bura atın və ya Seçin</p>
-                                                    <span id="loadingText" class="drop-zoon__loading-text">Please Wait...</span>
-                                                    <input type="file" id="fileInput" class="drop-zoon__file-input" accept="image/*" multiple>
-                                                </div>    
-                                            </div>
-                                            <p class="upload-require">*png, *jpg və ya *.pdf fayl formatında yükləyə bilərsiniz. Max fayl ölçüsü: 1.5 Mb</p>
-
-                                            <!-- File Details -->
-                                            <div id="fileDetails" class="upload-area__file-details file-details">                                            
-                                                <div id="uploadedFile" class="uploaded-file">                                            
-                                                    <div id="uploadedFileInfo" class="uploaded-file__info">
-                                                        <span class="uploaded-file__name">Proejct 1</span>
-                                                        <span class="uploaded-file__counter">0%</span>
-                                                    </div>
-                                                </div>
-                                                <span class="uploaded-file__size">0</span>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="row d-block d-lg-flex language-knowledge">
-                                            <label for="" class="form-label" id="additional-lang-title">Əlavə dil bilikləriniz</label>
-                                            <button id="addRowBtn"><i class="fas fa-plus"></i></button>
-                                            <div class="row d-flex language-select">
-                                                <div class="col-3 language-select-tab">
-                                                    <label for="" class="form-label">Xarici dil</label>
-                                                        <div class="form-group">                                                
-                                                            <select data-placeholder="Seçin">
-                                                                <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                                <option value="Riyaziyyat">İngilis dili</option>
-                                                            </select>
-                                                        </div>
-                                                </div>
-                                                <div class="col-3">
-                                                    <label for="" class="form-label">Oxumaq</label>
-                                                        <div class="form-group">                                                
-                                                            <select data-placeholder="Seçin">
-                                                                <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                                <option value="Riyaziyyat">Əla</option>
-                                                            </select>
-                                                        </div>
-                                                </div>   
-                                                <div class="col-3">
-                                                    <label for="" class="form-label">Yazmaq</label>
-                                                        <div class="form-group">                                                
-                                                            <select data-placeholder="Seçin">
-                                                                <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                                <option value="Riyaziyyat">Orta</option>
-                                                            </select>
-                                                        </div>
-                                                </div>   
-                                                <div class="col-3">
-                                                    <label for="" class="form-label">Danışmaq</label>
-                                                        <div class="form-group">                                                
-                                                            <select data-placeholder="Seçin">
-                                                                <option value="" disabled selected hidden class="option-placeholder">Seçin</option>
-                                                                <option value="Riyaziyyat">Zəif</option>
-                                                            </select>
-                                                        </div>
-                                                </div>  
-                                                <div class="col-1 minus-button">
-                                                    <button id="removeBtn"><i class="fas fa-minus"></i></button>
-                                                </div>                                                
-                                            </div>
-                                        </div>
-
                                         <div class="d-inline-block registration-checkbox">
                                             <input type="checkbox" class="form-check-input">
                                             <label class="form-check-label required">Siz yuxarıda qeyd etdiyinız məlumatların düzgün olduğunu və Azərbaycan Müəllimlər Assosiasiyasının üzvü olmaq istədiyinizi təsdiq edirsinizmi?</label>
@@ -830,7 +775,7 @@
            <a href=""> <i class="fab fa-youtube"></i> </a>
            <a href=""> <i class="fab fa-telegram"></i> </a>
         </div>
-        <div class="container language">
+        <div class="container language d-flex">
            <p>Dil seçimi</p>
            <select data-placeholder="Dil seçimi">
             <option value="Azərbaycanca">Azərbaycanca</option>
@@ -851,9 +796,7 @@
     <script src="../assets/vendor/js/bootstrap.min.js"></script>
     <script src=" ../assets/scripts/main.js"></script>
     <script src=" ../assets/scripts/fileUpload.js"></script>
-    <script src="../assets/scripts/datepicker.js"></script>
-    <script src="../assets/vendor/js/datepicker.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="../assets/vendor/js/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
 </body>
 
 </html>

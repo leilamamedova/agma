@@ -53,7 +53,7 @@
 
 .btcd-files {
     display: grid;
-    grid-template-columns: repeat(5, minmax(212px, 1fr));
+    grid-template-columns: repeat(4, minmax(212px, 1fr));
     grid-column-gap: 16px;
     grid-row-gap: 16px;
 }

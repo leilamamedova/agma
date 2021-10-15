@@ -244,33 +244,124 @@
     <div class="page-cover">
         <div class="container">
             <div class="breadcrumb">
-                <div class="breadcrumb__link"><a href="">Əsas</a> <a href="">Forum</a> <a href="">Biz niyə təhsilə bu qədər önəm veririk? </a> Faydalı məlumatlar </div>
+                <div class="breadcrumb__link"><a href="">Əsas</a>Forum</div>
             </div>
         </div>
     </div>   
 
     <section class ="info-page-sections">
-        <div class="container forum-page">
+        <div class="container forum-page forum-header">
             <div class="d-flex posts-bold-title align-items-end justify-content-start">
-                <div class="col-10">
-                    <h1 >Faydalı məlumatlar</h1>
+                <div class="col-10 d-flex">
+                    <h1>Forum</h1>
+                    <div class="forum__search__box">
+                        <input class="forum__search" type="text" placeholder="Mövzu üzrə axtarış" name="forumSearchPanel" autocomplete="off">
+                        <i class="forum__search__image far fa-search"></i>
+                    </div>                                              
+                    <select data-placeholder="Seçin">
+                        <option value="" disabled="" selected="" hidden="" class="option-placeholder">Bütün</option>
+                        <option value="Baki">None</option>
+                        <option value="Naxçıvan">None</option>
+                    </select>
                 </div>                
                 <div class="col-2">
-                    <button class="btn btn__rounded_pink" onclick="location.href='new-useful-info.html'">Əlavə et</button>
-                </div> 
+                    <button class="btn btn__rounded_pink" onclick="location.href='new-topic.html'">Yeni mövzu yarat</button>
+                </div>                
             </div>
         </div>
 
-        <div class="container useful-info-list">
-            <div class="useful-list-header">
-                <h1>Biz niyə təhsilə bu qədər önəm veririk? </h1>
+        <div class="section-content single-info-page">
+            <div class="container d-flex justify-content-between">
+                <div class="forum-main">
+                    <div class="forum-grey-header d-flex">
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="#">Bütün mövzular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Mənim mövzularım</a>
+                            </li>                
+                        </ul> 
+                    </div>       
+
+                    <div class="container forum-null-main">
+                        <img src="../assets/img/nofiles.svg" alt="">
+                        <h1>Hal-hazırda heç bir mövzu tapılmadı</h1>
+                        <p>Sizin yaratdığınız heç bir mövzu mövcud deyildir. Yeni mövzu yaratmağınız xahiş olunur.</p>
+                        <button class="btn btn__rounded_pink" onclick="location.href='new-topic.html'">Yeni mövzu yarat</button>
+                    </div>                    
+                </div>      
+                
+                <div class="single-info-page-side forum-side">
+                    <div class="forum-grey-header">
+                        Son şərhlər
+                    </div>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="container d-flex single-info-page-side-badge">
+                            <div >
+                                <h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6>
+                                <p class="forum-author">Müəllif: <span>Victoria Maggio</span> </p>
+                                <p class="forum-comment">Consequuntur facere laboriosam accusamus praesentium velit officiis molestias quia perferendis. Veritatis harum in placeat id...</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="useful-list-none">
-                <ul>
-                    <li>Üzr istəyirik. Hər hansı məlumat tapılmadı.</li>
-                </ul>
-            </div>
-        </div>   
+        </div>      
     </section>    
     
     <section id="subscr-us">

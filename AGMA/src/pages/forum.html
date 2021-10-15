@@ -265,7 +265,7 @@
                     </select>
                 </div>                
                 <div class="col-2">
-                    <button class="btn btn__rounded_pink">Yeni mövzu yarat</button>
+                    <button class="btn btn__rounded_pink" onclick="location.href='new-topic.html'">Yeni mövzu yarat</button>
                 </div>                
             </div>
         </div>
@@ -273,137 +273,291 @@
         <div class="section-content single-info-page">
             <div class="container d-flex justify-content-between">
                 <div class="forum-main">
-                    <div class="forum-grey-header">
-                        Bütün mövzular
-                    </div>
+                    <div class="forum-grey-header d-flex">
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Bütün mövzular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mənim mövzularım</a>
+                            </li>                
+                        </ul> 
+                    </div>                    
+                    
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
+                            <div class="col-8">
                                 <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
                                 <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                     
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="container d-flex forum-main-badge">
                         <div class="row forum-main-badge-text">
-                            <div class="col-9">
-                                <a href=""><h6 class="forum-topic">Ipsam voluptatem velit ut vitae. Voluptatem aut corrupti est vel omnis accusantium nostrum aut. Et esse quas sint. 🍁🍁🍁</h6></a>
-                                <p class="forum-author">Müəllif: <a href="">Lucia Kunde</a> </p>
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
                             </div>
 
-                            <div class="col-3">                                
-                                <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
-                                <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>    
-                            </div>                   
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="container d-flex forum-main-badge">
+                        <div class="row forum-main-badge-text">
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
+                            </div>
+
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="container d-flex forum-main-badge">
+                        <div class="row forum-main-badge-text">
+                            <div class="col-8">
+                                <a href=""><h6 class="forum-topic">Biz niyə təhsilə bu qədər önəm veririk?</h6></a>
+                                <p class="forum-author">Müəllif: <a href="">Victoria Maggio</a> </p>
+                            </div>
+
+                            <div class="col-4 d-flex justify-content-between">     
+                                <div class="forum-numbers">
+                                    <h6 class="forum-comments-num"> <span>2123</span> şərh</h6>
+                                    <p class="forum-watch-num"> <span>11223</span> baxış sayı</p>  
+                                </div>                           
+                                <div class="btn-group kebab">
+                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="dropdown-item" type="button">Daha ətraflı</button></li>
+                                       
+                                      <li><button class="dropdown-item" type="button">Faydalı məlumatlar</button></li>
+                                    </ul>
+                                  </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>      
@@ -600,6 +754,7 @@
 
     <script src="../assets/vendor/js/jquery.min.js"></script>
     <script src="../assets/vendor/js/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/js/popper.min.js"></script>
     <script src="../assets/vendor/js/bootstrap.min.js"></script>
     <script src=" ../assets/scripts/main.js"></script>
     <script src="../assets/scripts/counter.js" defer></script>
