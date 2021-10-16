@@ -138,39 +138,13 @@ function handleFile(e) {
     }
 
     // set File list view
+    let img = null
     if (e.target.files.length > 0) {
-        
+
         e.target.parentNode.parentNode.querySelector('.btcd-files').innerHTML = ''
         for (let i = 0; i < e.target.files.length; i += 1) {
-            let img = null
-            if(e.target.files[i].type=="image/png") {
-                img = "../assets/img/png.svg"
-            }
-            if(e.target.files[i].type=="image/jpeg") {
-                img = "../assets/img/jpg.svg"
-            }
-            if(e.target.files[i].type=="application/msword") {
-                img = "../assets/img/doc.svg"
-            }
-            if(e.target.files[i].type=="application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
-                img = "../assets/img/doc.svg"
-            }
-            if(e.target.files[i].type=="application/vnd.ms-powerpoint") {
-                img = "../assets/img/ppt.svg"
-            }
-            if(e.target.files[i].type=="application/vnd.openxmlformats-officedocument.presentationml.presentation") {
-                img = "../assets/img/ppt.svg"
-            }
-            if(e.target.files[i].type=="application/vnd.ms-excel") {
-                img = "../assets/img/xls.svg"
-            }
-            if(e.target.files[i].type=="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
-                img = "../assets/img/xls.svg"
-            }
-            if(e.target.files[i].type=="application/pdf") {
-                img = "../assets/img/pdf.svg"
-            }          
-           
+            img = defineFileType(e.target.files[i].type);
+            
             e.target.parentNode.parentNode.querySelector('.btcd-files').insertAdjacentHTML('afterbegin', `<div>
                     <img src="${img}" alt="img"  title="${e.target.files[i].name}">
                     <div>
@@ -183,7 +157,41 @@ function handleFile(e) {
         }
     }
 
-    // set eror
+    function defineFileType(type) {
+        switch (type) {
+            case "image/png":
+                return "../assets/img/png.svg";
+                break;
+            case "image/jpeg":
+                return "../assets/img/jpg.svg";
+                break;
+            case "application/msword":
+                return "../assets/img/doc.svg";
+                break;
+            case "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+                return "../assets/img/doc.svg";
+                break;
+            case "application/vnd.ms-powerpoint":
+                return "../assets/img/ppt.svg";
+                break;
+            case "application/vnd.openxmlformats-officedocument.presentationml.presentation":
+                return "../assets/img/ppt.svg";
+                break;
+            case "application/vnd.ms-excel":
+                return "../assets/img/xls.svg";
+                break;
+            case "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":
+                return "../assets/img/xls.svg";
+                break;
+            case "application/pdf":
+                return "../assets/img/pdf.svg";
+                break;            
+            default:
+                break;
+        }
+    }   
+
+    // set error
     if (err.length > 0) {
         for (let i = 0; i < err.length; i += 1) {
             e.target.parentNode.parentNode.querySelector('.btcd-files').insertAdjacentHTML('afterbegin', `

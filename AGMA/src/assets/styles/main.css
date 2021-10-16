@@ -5032,6 +5032,7 @@ form select option {
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   padding: 0;
+  width: 20px;
 }
 
 .kebab .btn:focus {
@@ -5046,10 +5047,6 @@ form select option {
   border-radius: 6px;
   padding: 4px;
   z-index: 9; 
-}
-
-.dropdown-menu.show {
- position: static;
 }
 
 .kebab li {
