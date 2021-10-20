@@ -427,3 +427,11 @@ $(document).ready(function () {
   });
 });
 
+// Textarea Counter
+let textarea = document.querySelector('.contact-content--form textarea');
+
+textarea.addEventListener("input", event => {
+  const target = event.currentTarget;
+  const currentLength = target.value.length;
+  document.querySelector('.textarea-counter span').innerHTML = currentLength;
+});

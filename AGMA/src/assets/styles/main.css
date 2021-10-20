@@ -260,6 +260,10 @@ a {
   text-decoration-line: line-through;
 }
 
+.form-control::placeholder {
+  color: #ACB3B8;  
+}
+
 /* Header */
 .header {
     width: 100vw;
@@ -462,7 +466,7 @@ a {
   width: 100vw;
   height: 100vh;
   background: #ffffff;
-  z-index: 99;
+  z-index: 9999;
   display: none;
   transition: 0.8s cubic-bezier(0.52, 0.01, 0.16, 1);
   left: 0px;
@@ -594,7 +598,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   height: 21px;
-  z-index: 9999;
+  z-index: 99999;
   -webkit-transition: 0.4s cubic-bezier(0.52, 0.01, 0.16, 1);
   transition: 0.4s cubic-bezier(0.52, 0.01, 0.16, 1);
   position: relative;
@@ -933,7 +937,7 @@ li.has-child > a::after {
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    z-index: 99999;
+    z-index: 999999;
     padding: 0;
     margin-top: 72px;
   }
@@ -2070,7 +2074,6 @@ text-decoration: none;
 
 .fa-instagram:hover {
   transition: all .5s ease;
-  background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2324,7 +2327,7 @@ text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: #ACB3B8;  
+  color: #ACB3B8;    
 }
 
 .login-content--form .btn {
@@ -2951,12 +2954,6 @@ form select:focus {
   transition: 0.25s ease;
 }
 
-#registration-page .form-group label.required::after {
-  content: "*";
-  color: red;
-  margin-left: 3px;
-}
-
 .selectize-input {
   height: 48px;
   background: #FFFFFF;
@@ -3194,11 +3191,6 @@ form select option {
   border: none;
 }
 
-.registration-checkbox label.required::after {
-  content: "*";
-  color: red;
-  margin-left: 3px;
-}
 
 .registration-checkbox label {
   height: 24px;
@@ -4716,7 +4708,7 @@ form select option {
   margin-top: 24px  ;
 }
 
-.idea-bank .form-group label.required::after {
+label.required::after {
   content: "*";
   color: red;
   margin-left: 3px;
@@ -5469,4 +5461,184 @@ form select option {
 
 .forum-null-main button {
   margin-top: 16px;
+}
+
+/* Contact */
+#map-container {
+  height: 500px;
+}
+
+#map {
+  width: 100%;
+  position: absolute;
+  height: 356px;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+}
+
+#map img {
+  width: 100%;
+}
+
+/*Map marker style*/
+.map-marker {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  margin-top: -34px;
+  /*Shift by arrow top+height*/
+  margin-left: -13px;
+  /*Shift by half the marker width*/
+}
+
+.map-marker div.icon {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(135.03deg, #E173B4 1.02%, #AB417F 99.26%);
+  border-radius: 4px;
+  width: 81px;
+  height: 80px;
+  line-height: 75px;
+  font-size: 12px;
+  border-radius: 50%;
+  margin-left: -30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.map-marker.A div.icon:before {
+  content: '\f3c5';
+  font-family: 'Font-Family-Light';
+  color: #ffffff;
+  font-size: 2.1875rem;
+}
+
+.map-marker div.map-arrow {
+  position: relative;
+  border-style: solid;
+  border-color: #b84789 transparent transparent transparent;
+  border-width: 6px 6px 0 6px;
+  /*Arrow w/h is defined by the borders*/
+  left: 5px;
+  /*(Marker width - arrow width)/2*/
+  width: 0px;
+  height: 0px;
+  top: -1px;
+}
+
+.leaflet-marker-pane img {
+  display: none;
+}
+
+.leaflet-control-container {
+  display: none;
+}
+
+.contact-badge {
+  height: 328px;
+  background-color: #AB417F;
+  padding: 80px 0;
+}
+
+.contact-badge-text {
+  color: #fff;  
+  margin-right: 300px;
+}
+
+.contact-badge-text h1 {
+  font-family: "SF Pro Display Bold";
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-badge-text p {
+  width: 140px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.contact-badge-text div:first-child {
+  margin-right: 60px;
+}
+
+.contact-badge .social-icons {
+  margin-top: 20px;
+}
+
+.contact-badge .social-icons i {
+  color: #fff;
+}
+
+.contact-badge .social-icons i:hover {
+  color: #BDC3C7;
+  background: none;
+  -webkit-background-clip:inherit;
+  -webkit-text-fill-color:inherit;
+}
+
+.contact-content {
+  z-index: 999;
+  box-shadow: 40px 20px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  max-width: 520px;
+  width: 100%;
+  position: absolute;
+  min-height: 676px;
+  background: #ffffff;
+  top: 330px;
+  left: 200px;
+  padding: 32px;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-content--form .title {
+  font-family: "SF Pro Display Bold";
+  font-size: 32px;
+  line-height: 48px;  
+  color: #2E3131;  
+  margin-bottom: 32px;
+}
+
+.contact-content--form label {
+  font-size: 14px;
+}
+
+.contact-content--form input {
+  margin-bottom: 16px;
+}
+
+.contact-content--form textarea {
+  min-height: 188px;
+}
+
+.textarea-counter {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;  
+  color: #ACB3B8;  
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.contact-content--form button {
+  margin-top: 8px;
 }
