@@ -361,9 +361,18 @@ function toggleMenuDisplay(e) {
   toggleClass(menu, 'hide');
 }
 
+// Loading
 $(window).on('load', function () {
-  $("#loading").fadeOut(1500)
+  $(".loader-fade").fadeOut(1500);  
 });
+
+function showLoading() {
+  $(".loader-fade").css("display","block")
+}
+
+function hideLoading() {
+  $(".loader-fade").css("display","none")
+}
 
 // Search
 const container = document.querySelector(".search-container");
@@ -403,6 +412,15 @@ $('.nav li a').click(function () {
   $(this).addClass("active");
 });
 
+// Tabs Link
+const courseInfoLink = document.querySelectorAll('.course_info_link');
+
+courseInfoLink && courseInfoLink.forEach((item)=>{
+  item.addEventListener('click', (e)=>{
+    e.preventDefault()
+  })
+})
+
 // Password input
 $(".toggle-password").click(function () {
   $(this).toggleClass("fa-eye fa-eye-slash");
@@ -414,14 +432,8 @@ $(".toggle-password").click(function () {
   }
 });
 
-// Date Picker
-$("input[type='date']").css("color",'#ACB3B8');
-$("input[type='date']").click(function () {
-  $(this).css("color",'#2E3131');
-})  
-
 // Select Options
-$(document).ready(function () {
+$(function() {
   $('select').selectize({
       sortField: 'text'
   });
@@ -435,3 +447,64 @@ textarea.addEventListener("input", event => {
   const currentLength = target.value.length;
   document.querySelector('.textarea-counter span').innerHTML = currentLength;
 });
+
+// Delete File Func
+function delFile(el) {  
+  el.parentNode.remove()
+}
+
+// Add/Remove Language Row
+function createLang() {
+
+  document.querySelector('.language-knowledge').insertAdjacentHTML('beforeend', `<div class="row d-flex language-select">
+  <div class="col-3 language-select-tab">
+      <label for="" class="form-label">Xarici dil</label>
+          <div class="form-group">                                                
+              <select data-placeholder="Seçin">
+                  <option value="" >Seçin</option>
+                  <option value="Riyaziyyat">İngilis dili</option>
+              </select>
+          </div>
+  </div>
+  <div class="col-3">
+      <label for="" class="form-label">Oxumaq</label>
+          <div class="form-group">                                                
+              <select data-placeholder="Seçin">
+                  <option value="" >Seçin</option>
+                  <option value="Riyaziyyat">Əla</option>
+              </select>
+          </div>
+  </div>   
+  <div class="col-3">
+      <label for="" class="form-label">Yazmaq</label>
+          <div class="form-group">                                                
+              <select data-placeholder="Seçin">
+                  <option value="" >Seçin</option>
+                  <option value="Riyaziyyat">Orta</option>
+              </select>
+          </div>
+  </div>   
+  <div class="col-3">
+      <label for="" class="form-label">Danışmaq</label>
+          <div class="form-group">                                                
+              <select data-placeholder="Seçin">
+                  <option value="" >Seçin</option>
+                  <option value="Riyaziyyat">Zəif</option>
+              </select>
+          </div>
+  </div>  
+  <div class="col-1 minus-button">
+      <button id="removeBtn" onclick="deleteLang(this)"><i class="fas fa-minus"></i></button>
+  </div>                                                
+</div>`)
+}
+
+function deleteLang(el) {
+  el.parentNode.parentNode.remove()
+}
+
+// Profile Image Upload
+function loadFile (event) {
+  var image = document.getElementById("output");
+  image.src = URL.createObjectURL(event.target.files[0]);
+};

@@ -10,11 +10,10 @@ function getFileSize(size) {
 function delItem(el) {
     fileList = { files: [] }
     let fInp = el.parentNode.parentNode.parentNode.querySelector('input[type="file"]')
-    for (let i = 0; i < fInp.files.length; i++) {
-        fileList.files.push(fInp.files[i])
-    }
-    fileList.files.splice(el.getAttribute('data-index'), 1)
-
+    const fileListArr = [...fInp.files]
+    let filteredItems = fileListArr.filter((f,index)=>index!==+el.getAttribute('data-target'))
+    fInp.files = createFileList(filteredItems)
+    fileList.files = filteredItems
     
     el.parentNode.remove()
 }
