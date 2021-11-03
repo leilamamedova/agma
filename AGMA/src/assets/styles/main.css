@@ -2340,11 +2340,7 @@ footer .footer-info--item ul li a:hover {
 
 /* Login Page */
 #login-page {
-  height: 592px;
-}
-
-.login-title {
-  margin-top: 52px;
+  padding: 52px 0 80px 0;
 }
 
 .login-title h1 {
@@ -6571,4 +6567,35 @@ label.required::after {
 
 .single-mentor-badge .profile-badge-grid div {
   text-align: left;
+}
+
+.suggestions {
+  background-color: #fff;
+  margin-right: 45px;
+  border-top: 2px solid #eee;
+  opacity: 0;
+}
+.suggestions.show {
+  opacity: 1;
+}
+.suggestions li {
+  padding: 10px;
+  font-size: 18px;
+  border-left: 4px solid #fff;
+  color: #4d3e3e;
+  cursor: default;
+  list-style: none;
+}
+.suggestions li:hover {
+  border-color: #ff926b;
+  background-color: rgba(255, 146, 107, 0.2);
+}
+
+/* Forgot Password */
+.forgot-password {
+  margin-top: 36px;
+}
+
+.forgot-password button {
+  margin-top: 10px;
 }
