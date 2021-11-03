@@ -4146,8 +4146,7 @@ form select option {
   font-size: 16px;
   line-height: 24px;
   color: #2e3131;
-  padding-top: 17px;
-  padding-left: 20px;
+  padding: 16px 0 16px 20px;
 }
 
 .table-section .table td i {
@@ -6068,8 +6067,12 @@ label.required::after {
 /* Profile Comments */
 .profile-comments .table-section .table {
   border: 0px solid #e4e8ee;
-  width: auto;
+  width: 100%;
   height: auto;
+}
+
+#profile-comments-table .table {
+  width: auto;
 }
 
 .profile-comments table tr:nth-child(1) {
@@ -6108,10 +6111,14 @@ label.required::after {
 }
 
 .profile-comments .table-section .table td {
-  padding: 12px 44px;
   font-family: "SF Pro Display Regular";
   font-size: 14px;
   line-height: 24px;
+}
+
+#profile-comments-table .table td {
+  padding: 12px 44px;
+  min-width: 200px;
 }
 
 .profile-comments .table tr:last-child {
@@ -6453,10 +6460,6 @@ label.required::after {
   margin: 0;
 }
 
-.mentoring-page .table-section .table {
-  width: 100%;
-}
-
 .mentoring-page .table-section .table td i {
   color: #fce757;
   margin-right: 8px;
@@ -6567,28 +6570,6 @@ label.required::after {
 
 .single-mentor-badge .profile-badge-grid div {
   text-align: left;
-}
-
-.suggestions {
-  background-color: #fff;
-  margin-right: 45px;
-  border-top: 2px solid #eee;
-  opacity: 0;
-}
-.suggestions.show {
-  opacity: 1;
-}
-.suggestions li {
-  padding: 10px;
-  font-size: 18px;
-  border-left: 4px solid #fff;
-  color: #4d3e3e;
-  cursor: default;
-  list-style: none;
-}
-.suggestions li:hover {
-  border-color: #ff926b;
-  background-color: rgba(255, 146, 107, 0.2);
 }
 
 /* Forgot Password */
