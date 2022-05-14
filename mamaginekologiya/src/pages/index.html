@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ginekologiya və Perinatologiyanın İnkişafına Dəstək</title>
+
+    <link href="../assets/vendor/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/fonts/FontAwesome/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="search-container">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <div>
+                    <i class="far fa-search"></i>
+                    <input type="text" placeholder="Axtaracağınız sözü daxil edin..." />
+                </div>
+                <button><i class="far fa-long-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <p class="header-info">
+                        <i class="fas fa-map-marker-alt"></i>Bakı, Azərbaycan, 15B Basti Baghirova
+                    </p>
+                    <p class="header-info">
+                        <i class="far fa-clock"></i>Həftə içi hər gün: <b>9:00 - 18:00</b>
+                    </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-end w-50">
+                    <div class='lang-dropdown'>
+                        <div class='title'>AZ <i class="far fa-angle-down"></i></div>
+                        <div class='menu hide'>
+                            <div class='option'><a href="#" data-lang="AZ">Azərbaycanca</a></div>
+                            <div class='option'><a href="#" data-lang="EN">English</a></div>
+                            <div class='option'><a href="#" data-lang="RU">Русский</a></div>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icons-link"><i class="fab fa-facebook"></i
+              ></a>
+                        <a href="#" class="social-icons-link"><i class="fab fa-twitter"></i
+              ></a>
+                        <a href="#" class="social-icons-link"><i class="fab fa-youtube"></i
+              ></a>
+                        <a href="#" class="social-icons-link"><i class="fab fa-instagram"></i
+              ></a>
+                    </div>
+                    <button id="searchBox" class="search">
+                <span>
+                  Saytda axtarış
+                </span>
+                <i class="far fa-search"></i>
+              </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Mobile nav-->
+    <div class="container mobile-navigation">
+        <button type="button" class="mobile-menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+
+        <nav class="mobile-menu">
+            <div class="mobile-menu__header">
+                <i class="fas fa-mobile-android-alt"></i>
+                <p>(012) 113</p>
+            </div>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Əsas</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Haqqımızda</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Struktur</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Kliniki bölmələr</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Elmi hissə</a>
+                </li>
+                <li class="mobile-menu__item has-child">
+                    <a href="#" class="mobile-menu__link" data-childLevel="1">Qalereya</a>
+                    <ul class="mobile-menu__list mobile-menu__list--child">
+                        <button class="mobile-menu__back" type="button" data-childLevel="0">GERİYƏ QAYIT</button>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">Foto</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">Video</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Jurnal</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Statistika</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Bizimlə əlaqə</a>
+                </li>
+            </ul>
+            <div class="lang">
+                <a href="">ENG</a>
+                <a href="">AZE</a>
+                <a href="">RUS</a>
+            </div>
+            <button type="button" id="mobile-menu__close" class="mobile-menu__close">
+          <i class="fal fa-times"></i>
+        </button>
+        </nav>
+
+        <img src="../assets/img/logo.svg" />
+        <button id="mobileSearchBtn">
+        <i class="far fa-search"></i>
+      </button>
+    </div>
+
+    <!--Mobile nav end-->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="main-nav__branding">
+                <a href=""><img src="../assets/img/logo.svg" /></a>
+                <div class="stack stack--horizontal d-flex align-items-center justify-content-between">
+                    <div class="stack--item d-flex align-items-center">
+                        <div class="stack--item-title">
+                            <p>Bizə yazın</p>
+                            <small>office@mamaginekologiya.az</small>
+                        </div>
+                        <i class="fal fa-paper-plane"></i>
+                    </div>
+                    <div class="stack--item d-flex align-items-center">
+                        <div class="stack--item-title">
+                            <p>Həftə içi hər gün</p>
+                            <small>Saat: 9:00 - 18:00</small>
+                        </div>
+                        <i class="fal fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="main-nav__list d-lg-flex d-none">
+                <li class="main-nav__item">
+                    <a href="../pages/index.html" class="main-nav__link active">Əsas</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/about.html" class="main-nav__link">Haqqımızda</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/structure.html" class="main-nav__link">Struktur</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/clinic_instructions.html" class="main-nav__link">Klinik təlimatlar</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/science-departments.html" class="main-nav__link">Elmi hissə</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Qalereya</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="../pages/photo-gallery.html">Foto</a>
+                        </li>
+                        <li><a href="../pages/video-gallery.html">Video</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Jurnal</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/contacts.html" class="main-nav__link">Bizimlə əlaqə</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="jumbotron jumbotron-fluid">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/jumbotron.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron__container d-flex flex-column justify-content-between">
+            <div class="container d-flex justify-content-center flex-column">
+                <h1>Distinctio incidunt qui eum rerum at.</h1>
+                <p>
+                    Officiis esse ut veritatis culpa incidunt velit est quo. Qui sit architecto saepe voluptatem ex. Ipsa et consequatur accusamus tempore est id quia odio aut. </p>
+            </div>
+            <div class="container grid-4">
+                <img src="../assets/img/jumbotron-list-1.png" />
+                <img src="../assets/img/jumbotron-list-2.png" />
+                <img src="../assets/img/jumbotron-list-3.png" />
+                <img src="../assets/img/jumbotron-list-4.png" />
+            </div>
+        </div>
+        <div class="jumbotron-list">
+            <div class="container grid-4">
+                <a href="#" class="jumbotron-list-item"><img src="../assets/img/jumbotron-list-1.png" />Reproduktiv sağlamlıq</a>
+                <a href="#" class="jumbotron-list-item"><img src="../assets/img/jumbotron-list-2.png" />Ailəyə dəstək</a>
+                <a href="#" class="jumbotron-list-item"><img src="../assets/img/jumbotron-list-3.png" />Elmi Tədqiqatlar</a>
+                <a href="#" class="jumbotron-list-item"><img src="../assets/img/jumbotron-list-4.png" />Xoşbəxt gələcək</a>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container d-md-flex align-items-start">
+            <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselWithIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselWithIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/about_1.png" class="d-block w-100 h-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/cover1.png" class="d-block w-100 h-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/news_1.png" class="d-block w-100 h-100" alt="..." />
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="tab-container">
+                    <ul class="nav nav-tabs nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news" aria-selected="true">
+                  Xəbərlər
+                </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="announcements-tab" data-bs-toggle="tab" data-bs-target="#announcements" type="button" role="tab" aria-controls="announcements" aria-selected="false">
+                  Elanlar
+                  </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content nav-pills-tabs">
+                        <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> Harum corrupti et tenetur qui porro voluptates.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> Harum corrupti et tenetur qui porro voluptates.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> Harum corrupti et tenetur qui porro voluptates.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> Harum corrupti et tenetur qui porro voluptates.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> Harum corrupti et tenetur qui porro voluptates.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="announcements" role="tabpanel" aria-labelledby="announcements-tab">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="news">
+        <div class="container">
+            <h6>Ginekologiya və Perinatologiyanın İnkişafına Dəstək</h6>
+            <h2>Pediatriyada son yeniliklər</h2>
+            <div class="grid-4">
+                <div class="card">
+                    <a href="">
+                        <div class="card__image">
+                            <img src="../assets/img/jumbotron.png" alt="news_1" />
+                        </div>
+                        <div class="card__body">
+                            <p class="truncate">ETPİ direktoru Fəxri fərmanla Təltif olundu.</p>
+                        </div>
+                        <div class="card__footer">21 yanvar 2021</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <div class="card__image">
+                            <img src="../assets/img/news_2.png" alt="news_2" />
+                        </div>
+                        <div class="card__body">
+                            <p class="truncate">Ötən il neçə nəfər icbari tibbi sığortadan yararlanıb?</p>
+                        </div>
+                        <div class="card__footer">21 yanvar 2021</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <div class="card__image">
+                            <img src="../assets/img/news_3.png" alt="news_3" />
+                        </div>
+                        <div class="card__body">
+                            <p class="truncate">İcbari tibbi sığorta xidməti verən özəl müəssisələrin sayı arta bilər.
+                            </p>
+                        </div>
+                        <div class="card__footer">21 yanvar 2021</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <div class="card__image">
+                            <img src="../assets/img/news_4.png" alt="news_4" />
+                        </div>
+                        <div class="card__body">
+                            <p class="truncate">Ötən il neçə nəfər icbari tibbi sığortadan yararlanıb?</p>
+                        </div>
+                        <div class="card__footer">21 yanvar 2021</div>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="news__button">Bütün xəbərlər</a>
+        </div>
+    </section>
+    <section class="statistics d-flex justify-content-center">
+        <div class="container">
+            <div class="statistics__item">
+                <span class="statistics__counter">7+</span>
+                <p>ELMİ TƏDQİQAT</p>
+            </div>
+            <div class="statistics__item">
+                <span class="statistics__counter">300+</span>
+                <p>ÜZV</p>
+            </div>
+            <div class="statistics__item">
+                <span class="statistics__counter">200+</span>
+                <p>ELMİ MƏQALƏ</p>
+            </div>
+            <div class="statistics__item">
+                <span class="statistics__counter">40+</span>
+                <p>ELMİ İŞÇİ</p>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="container d-lg-flex align-items-start">
+            <div class="events-gallery order-lg-1">
+                <h6>Ginekologiya və Perinatologiyanın İnkişafına Dəstək</h6>
+                <h2>Video qalereya</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F4neLJQC1_E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="events-list order-lg-0">
+                <h6>Ginekologiya və Perinatologiyanın İnkişafına Dəstək</h6>
+                <h2>Tədbirlər</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>04.02.2021</span> ETPİ-nun direktoru Fəxri Fərmanla Təltif olundu
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">Bütün tədbirlər</a>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer__jumbotron d-flex justify-content-center align-items-center">
+            <p>
+                <i class="fal fa-ambulance"></i>Təcili yardım lazımdır?
+                <span>113</span> şəhər nömrəsinə zəng edin
+            </p>
+        </div>
+        <div class="container">
+            <div class="footer-info grid-3">
+                <div class="footer-info--item">
+                    <p>HAQQIMIZDA</p>
+                    <span></span>
+                    <p>
+                        Ginekologiya və perinatologiyanın inkişafına kömək etmək məqsədilə, mamalıq və ginekologiya sahəsində yerli və beynəlxalq səviyyədə böyük uğurlara imza atmış, tibb elmləri doktoru, professor Cəmilə Qurbanova tərəfindən 6 dekabr 2012-ci ildə 50 nəfər üzv
+                        ilə “Ginekologiya ve Perinatologiyanın İnkişafına Dəstək” ictimai birliyi yaradılmışdır.
+                    </p>
+                </div>
+                <div class="footer-info--item">
+                    <p>BİZİMLƏ ƏLAQƏ</p>
+                    <span></span>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan, 15B Basti Baghirova
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-android-alt"></i>(+99412) 568 98 98, (+99412) 568 98 98
+                        </li>
+                        <li><i class="far fa-fax"></i>(+994 12) 555 90 70</li>
+                        <li><i class="far fa-paper-plane"></i>office@mamaginekologiya.az</li>
+                        <li><i class="fab fa-whatsapp"></i>office@mamaginekologiya.az</li>
+                    </ul>
+                </div>
+                <div class="footer-info--item">
+                    <div>
+                        <p>FAYDALI LİNKLƏR</p>
+                        <span></span>
+                        <a href="#">www.ecourses.az</a>
+                        <a href="#">www.videdoktor.az</a>
+                        <a href="#">www.dermanlarim.az</a>
+                    </div>
+                    <div>
+                        <p>İŞ SAATLARI</p>
+                        <span></span>
+                        <p>Həftə içi hər gün <br />Saat: 8:00 - 20:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-line">
+            <div class="container">
+                <p>Copyright © 2021 Bütün hüquqlar qorunur</p>
+                <ul class="social-media-icons">
+                    <li>
+                        <a class="facebook" href="#"><i class="fab fa-facebook-square"></i
+              ></a>
+                    </li>
+                    <li>
+                        <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/vendor/js/bootstrap.min.js" defer></script>
+    <script src="../assets/scripts/counter.js" defer></script>
+    <script src="../assets/scripts/main.js" defer></script>
+</body>
+
+</html>

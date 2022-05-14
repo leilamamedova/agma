@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ginekologiya və Perinatologiyanın İnkişafına Dəstək</title>
+
+    <link href="../assets/vendor/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/fonts/FontAwesome/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="search-container">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <div>
+                    <i class="far fa-search"></i>
+                    <input type="text" placeholder="Axtaracağınız sözü daxil edin..." />
+                </div>
+                <button><i class="far fa-long-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <p class="header-info">
+                        <i class="fas fa-map-marker-alt"></i>Bakı, Azərbaycan, 15B Basti Baghirova
+                    </p>
+                    <p class="header-info">
+                        <i class="far fa-clock"></i>Həftə içi hər gün: <b>9:00 - 18:00</b>
+                    </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-end w-50">
+                    <div class='lang-dropdown'>
+                        <div class='title'>AZ <i class="far fa-angle-down"></i></div>
+                        <div class='menu hide'>
+                            <div class='option'><a href="#" data-lang="AZ">Azərbaycanca</a></div>
+                            <div class='option'><a href="#" data-lang="EN">English</a></div>
+                            <div class='option'><a href="#" data-lang="RU">Русский</a></div>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icons-link"><i class="fab fa-facebook"></i
+              ></a>
+                        <a href="#" class="social-icons-link"><i class="fab fa-twitter"></i
+              ></a>
+                        <a href="#" class="social-icons-link"><i class="fab fa-youtube"></i
+              ></a>
+                        <a href="#" class="social-icons-link"><i class="fab fa-instagram"></i
+              ></a>
+                    </div>
+                    <button id="searchBox" class="search">
+                <span>
+                  Saytda axtarış
+                </span>
+                <i class="far fa-search"></i>
+              </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Mobile nav-->
+    <div class="container mobile-navigation">
+        <button type="button" class="mobile-menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+
+        <nav class="mobile-menu">
+            <div class="mobile-menu__header">
+                <i class="fas fa-mobile-android-alt"></i>
+                <p>(012) 113</p>
+            </div>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Əsas</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Haqqımızda</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Struktur</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Kliniki bölmələr</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Elmi hissə</a>
+                </li>
+                <li class="mobile-menu__item has-child">
+                    <a href="#" class="mobile-menu__link" data-childLevel="1">Qalereya</a>
+                    <ul class="mobile-menu__list mobile-menu__list--child">
+                        <button class="mobile-menu__back" type="button" data-childLevel="0">GERİYƏ QAYIT</button>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">Foto</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="mobile-menu__link">Video</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Jurnal</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Statistika</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Bizimlə əlaqə</a>
+                </li>
+            </ul>
+            <div class="lang">
+                <a href="">ENG</a>
+                <a href="">AZE</a>
+                <a href="">RUS</a>
+            </div>
+            <button type="button" id="mobile-menu__close" class="mobile-menu__close">
+          <i class="fal fa-times"></i>
+        </button>
+        </nav>
+
+        <img src="../assets/img/logo.svg" />
+        <button id="mobileSearchBtn">
+        <i class="far fa-search"></i>
+      </button>
+    </div>
+
+    <!--Mobile nav end-->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="main-nav__branding">
+                <a href=""><img src="../assets/img/logo.svg" /></a>
+                <div class="stack stack--horizontal d-flex align-items-center justify-content-between">
+                    <div class="stack--item d-flex align-items-center">
+                        <div class="stack--item-title">
+                            <p>Bizə yazın</p>
+                            <small>office@mamaginekologiya.az</small>
+                        </div>
+                        <i class="fal fa-paper-plane"></i>
+                    </div>
+                    <div class="stack--item d-flex align-items-center">
+                        <div class="stack--item-title">
+                            <p>Həftə içi hər gün</p>
+                            <small>Saat: 9:00 - 18:00</small>
+                        </div>
+                        <i class="fal fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="main-nav__list d-lg-flex d-none">
+                <li class="main-nav__item">
+                    <a href="../pages/index.html" class="main-nav__link active">Əsas</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/about.html" class="main-nav__link">Haqqımızda</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/structure.html" class="main-nav__link">Struktur</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/clinic_instructions.html" class="main-nav__link">Klinik təlimatlar</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/science-departments.html" class="main-nav__link">Elmi hissə</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Qalereya</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="../pages/photo-gallery.html">Foto</a>
+                        </li>
+                        <li><a href="../pages/video-gallery.html">Video</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Jurnal</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/contacts.html" class="main-nav__link">Bizimlə əlaqə</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="cover" style="background-image: url(../assets/img/cover2.jpg)">
+        <div class="container">
+            <div class="breadcrumb">
+                <div class="breadcrumb__link"><a href="">Əsas</a>Struktur</div>
+                <div class="breadcrumb__item">
+                    <h2>Struktur</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <h4>İdarəetmə aparatının heyəti</h4>
+            <div class="card single-card">
+                <a href="#">
+                    <img src="../assets/img/structure1.png" alt="" />
+
+                    <div class="card__body">
+                        <div class="card__title">
+                            <h2>Dr Allahverdi Musayev</h2>
+                        </div>
+                        <div class="card__subtitle">İdarə aparatının Sədri, Direktor</div>
+                        <div class="card__text">
+                            Azərbaycan Tibb Universitetində bakalavr təhsili, Türkiyə Respublikası İzmir şəhəri Ege Universitetində isə ixtisas (Uşaq cərrahiyyəsi) təhsili almışdır. Tibb üzrə fəlsəfə doktoru Allahverdi Musayev daha öncə Musa Nağıyev adına Təcili Tibbi yardım Xəstəxanası,
+                            K.Fərəcova adına ETPİ Uşaq Cərrahiyyəsi, Mərkəzi Neftçilər xəstəxanası, Klinik Tibb Mərkəzinin Uşaq Cərrahiyyəsi şöbəsində həkim-cərrah olaraq çalışmışdır.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-list">
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="card__image">
+                            <img src="../assets/img/structure2.png" alt="" />
+                        </div>
+                        <div class="card__body">
+                            <div class="card__title">Nailə Rəhimova</div>
+                            <div class="card__subtitle">
+                                Elmi işlər üzrə direktor müavini
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__jumbotron d-flex justify-content-center align-items-center">
+            <p>
+                <i class="fal fa-ambulance"></i>Təcili yardım lazımdır?
+                <span>113</span> şəhər nömrəsinə zəng edin
+            </p>
+        </div>
+        <div class="container">
+            <div class="footer-info grid-3">
+                <div class="footer-info--item">
+                    <p>HAQQIMIZDA</p>
+                    <span></span>
+                    <p>
+                        Ginekologiya və perinatologiyanın inkişafına kömək etmək məqsədilə, mamalıq və ginekologiya sahəsində yerli və beynəlxalq səviyyədə böyük uğurlara imza atmış, tibb elmləri doktoru, professor Cəmilə Qurbanova tərəfindən 6 dekabr 2012-ci ildə 50 nəfər üzv
+                        ilə “Ginekologiya ve Perinatologiyanın İnkişafına Dəstək” ictimai birliyi yaradılmışdır.
+                    </p>
+                </div>
+                <div class="footer-info--item">
+                    <p>BİZİMLƏ ƏLAQƏ</p>
+                    <span></span>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan, 15B Basti Baghirova
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-android-alt"></i>(+99412) 568 98 98, (+99412) 568 98 98
+                        </li>
+                        <li><i class="far fa-fax"></i>(+994 12) 555 90 70</li>
+                        <li><i class="far fa-paper-plane"></i>office@mamaginekologiya.az</li>
+                        <li><i class="fab fa-whatsapp"></i>office@mamaginekologiya.az</li>
+                    </ul>
+                </div>
+                <div class="footer-info--item">
+                    <div>
+                        <p>FAYDALI LİNKLƏR</p>
+                        <span></span>
+                        <a href="#">www.ecourses.az</a>
+                        <a href="#">www.videdoktor.az</a>
+                        <a href="#">www.dermanlarim.az</a>
+                    </div>
+                    <div>
+                        <p>İŞ SAATLARI</p>
+                        <span></span>
+                        <p>Həftə içi hər gün <br />Saat: 8:00 - 20:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-line">
+            <div class="container">
+                <p>Copyright © 2021 Bütün hüquqlar qorunur</p>
+                <ul class="social-media-icons">
+                    <li>
+                        <a class="facebook" href="#"><i class="fab fa-facebook-square"></i
+              ></a>
+                    </li>
+                    <li>
+                        <a class="instagram" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/vendor/js/bootstrap.min.js" defer></script>
+    <script src="../assets/scripts/main.js" defer></script>
+</body>
+
+</html>
